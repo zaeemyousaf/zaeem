@@ -1,0 +1,22 @@
+Algorithm of the game that involves guessing identical cards layed face down.
+
+Real world situation.
+	1): some Cards are required
+	2): cards are arranged in rows and columns
+	3): A display screen to show scores of each participant
+	4): Seclection of some cards is involved
+	5): Those selected cards are shown
+	6): Decision for score is made on the behalf of selected cards
+	7): Decision of next turn is made
+
+Fancy world situation.
+      1): virtual cards with unique ID
+      2): Cards will be arranged in order and then shuffled
+      3): A display screen on monitor will be set
+      4): Game will involve a user input from a player, inputs positions of cards
+      5): turn upside down those cards
+      6): compare those cards
+      7): update score, decide next player
+Algorithm:
+	Input rules from user
+	call functionality from separate function file

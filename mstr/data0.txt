@@ -190,3 +190,5 @@ index	date	intensity	reason	food	health	wPressure
 177	08/04/2017	0	5	Normal	1	0
 178	09/04/2017	0	5	Normal	2	1
 179	16/04/2017	2	4	Normal	1	2
+180	23/04/2017	3	4	Mutton	1	2
+

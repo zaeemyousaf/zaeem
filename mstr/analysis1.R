@@ -49,6 +49,8 @@ totalDays=as.integer((as.Date(max(Dates))+7)-(as.Date(min(Dates))-7))
 xinc=totalDays/(totalTics-1)
 #---------
 # plotting
+#------------ custom name
+pdf(file="mstr.pdf")
 plot(seq(as.Date(min(Dates))-7,as.Date(max(Dates))+7,xinc),seq(0,highFreq,yinc),type='n',
 xlab="Date on which reading was taken",
 ylab="commulative frequency",main="mstr under different intensities")
@@ -66,4 +68,4 @@ lines(as.Date(dates2),1:length(dates2),col='green')
 legend("left","ShtEdg",text.col='green')	# Short Edging
 lines(as.Date(dates3),1:length(dates3),col='blue')
 legend("topleft","LngEdg",text.col='blue')	# Long Edging
-
+dev.off()	# closing pdf to save

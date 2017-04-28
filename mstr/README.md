@@ -18,4 +18,4 @@ It supports all markup of HTML
 `Rscript analysis1.R `
 It will generate a beautiful cumulative line graph.
 
-![mstr](https://cloud.githubusercontent.com/assets/27825403/25526119/92f41aa0-2c2b-11e7-872b-571033665185.png)
+![mstr](https://cloud.githubusercontent.com/assets/27825403/25526409/d5f73eda-2c2c-11e7-8af0-aaa0b87a9d26.png)

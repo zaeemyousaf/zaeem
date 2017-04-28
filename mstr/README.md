@@ -17,3 +17,5 @@ It supports all markup of HTML
 
 `Rscript analysis1.R `
 It will generate a beautiful cumulative line graph.
+
+[mstr.pdf](https://github.com/zaeemyousaf/zaeem/files/964139/mstr.pdf)

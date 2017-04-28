@@ -1,4 +1,3 @@
-# Memory Game written in Python3
 # Console based Game
 # Title: *MemoryTest*
 ### Author: Zaeem Yousaf

@@ -3,7 +3,7 @@
 # Date: 21-10-2016
 #-----------------------------
 # this program generates graph after analysis of data0
-# commulative freq of intensity over period of time
+# cumulative freq of intensity over period of time
 #-----------------------------
 # read data  and store into mstrData
 mstrData=read.table(file="data0.txt",sep='\t',comment.char='#',
@@ -37,9 +37,9 @@ for(i in 1:loops){
 #-----------------------------
 # Empty plot with wise ranges
 # Dates are on X-axis
-# commulative frequency is on Y-axis
+# cumulative frequency is on Y-axis
 # X-range minOfDates-7Day ... maxOfDates+7Day for good visibility purpose
-# y-range 0 .. maxOfCommulative
+# y-range 0 .. maxOfCumulative
 daysList=c(length(dates0),length(dates1),length(dates2),length(dates3),length(Dates))
 highFreq=max(daysList)
 #---------
@@ -53,7 +53,7 @@ xinc=totalDays/(totalTics-1)
 pdf(file="mstr.pdf")
 plot(seq(as.Date(min(Dates))-7,as.Date(max(Dates))+7,xinc),seq(0,highFreq,yinc),type='n',
 xlab="Date on which reading was taken",
-ylab="commulative frequency",main="mstr under different intensities")
+ylab="cumulative frequency",main="mstr under different intensities")
 #---------
 # drawing grid
 grid(col='grey')

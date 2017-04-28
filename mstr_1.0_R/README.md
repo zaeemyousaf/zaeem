@@ -16,4 +16,6 @@ It supports all markup of HTML
 * open R Terminal
 
 `Rscript analysis1.R `
-It will generate a beautiful accumulative line graph.
+It will generate a beautiful cumulative line graph.
+
+![mstr](https://cloud.githubusercontent.com/assets/27825403/25526409/d5f73eda-2c2c-11e7-8af0-aaa0b87a9d26.png)

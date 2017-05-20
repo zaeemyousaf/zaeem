@@ -1,0 +1,18 @@
+===
+Run
+===
++++++++++++++++++++
+	On Windows:
++++++++++++++++++++
+	1): install python 3
+	2): put all files in one direcotry
+	3): double click on MemoryTest_main_1.0.py and enjoy game
++++++++++++++++++++
+	On Linux:
++++++++++++++++++++
+	1): usually python3.4 is already installed
+	2): to make sure type on terminal 'whereis python'
+	3): otherwise install python3.4
+	4): put all files in one directory'
+	5): type 'python3.4 MemoryTest_main_1.0.py' and enjoy
+

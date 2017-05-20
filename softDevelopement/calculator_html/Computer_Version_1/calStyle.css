@@ -1,0 +1,25 @@
+/*	@ Zaeem Yousaf last edit: 03-03-2016 dd/mm/yy@  ---> computer version*/
+            #History{
+            font-size: 15pt;
+            width: 100%;
+            }
+input[type=button] {
+		width: 19.15%;
+		padding: 3px;
+		margin: 2px 0%;
+		border: none;
+		font-size: 25pt;
+		background-color: LightGreen;
+		border-radius: 20px;
+		
+		}
+input[type=text] {
+		width: 98%;
+		height: 40px;
+		font-size: 20pt;
+		color: Red;
+		}
+div[id=frame] {
+	word-wrap: break-word;
+	}
+

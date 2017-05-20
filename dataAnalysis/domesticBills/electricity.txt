@@ -1,0 +1,36 @@
+# electrictiy Bills of Zaeem yousaf's home
+# first letter of column name is capital
+# Month: Billing month
+# Units: units consumed each months
+# Cost: cost of per unit rounded off to nearest rupee
+# Status: 1: paid  0: notpaid
+# Bill was not paid because of shortage of money
+# start Bill 2014
+# AC 1: AC was installed 0: not installed
+Month	Units	Cost	Status	AC
+Sep	526	19	1	0
+Oct	520	19	1	0
+Nov	400	19	1	0
+Dec	320	19	1	0
+Jan	208	19	1	0
+Feb	195	19	1	0
+Mar	162	19	1	0
+Apr	172	19	1	0
+May	281	19	1	0
+Jun	250	17	1	0
+Jul	271	19	0	0
+Aug	319	19	0	0
+Sep	237	19	1	0
+Oct	257	19	0	0
+Nov	222	18	1	0
+Dec	200	18	1	0
+Jan	227	18	0	0
+Feb	273	18	0	0
+Mar	310	19	0	0
+Apr	241	19	1	0
+May	502	19	1	1
+Jun	1115	19	0	1
+Jul	603	19	1	1
+Aug	570	19	1	1
+sep	368	19	1	0
+

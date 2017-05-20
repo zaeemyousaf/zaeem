@@ -1,0 +1,4 @@
+1): analysis_charges.R source code to handle both:
+	electricity.txt gas.txt
+2): electricity.txt and gas.txt contains billing information
+3): scaleable vector is output

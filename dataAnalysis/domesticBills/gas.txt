@@ -1,0 +1,35 @@
+# Gas bill of zaeem yousaf's house
+# meter was installed on october 2014
+# HM3: units in cubic hectometer
+# Month: billing month
+# Cost: Bill of each month including taxes
+# Status: 1: paid 0: not paid
+# not paid because of carelessness
+
+Month	HM3	Cost	Status
+Oct	.20	110	0
+Nov	.270	240	1
+Dec	.270	200	0
+Jan	.250	204	0
+Feb	.160	178	0
+Mar	.260	198	0
+Apr	.284	191	1
+May	.348	204	0
+Jun	.256	185	1
+Jul	.256	191	1
+Aug	.318	199	0
+Sep	.297	197	1
+Oct	.471	224	0
+Nov	1.250	1072	0
+Dec	1.670	1434	1
+Jan	2.715	2315	0
+Feb	1.516	1302	0
+Mar	.871	393	1
+Apr	.410	210	0
+May	.338	197	0
+Jun	.369	223	1
+Jul	.236	177	0
+Aug	.379	204	0
+Sep	.338	197	0
+
+

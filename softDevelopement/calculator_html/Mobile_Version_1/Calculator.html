@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- @author: "Zaeem Yousaf" Date: 17/02/2016 Place: "Valencia Town Lahore" Qualification: O/Level @-->
+<HTML>
+<HEAD>
+	<TITLE>calculator </TITLE>
+	<LINK REL="stylesheet" HREF="calStyle.css" TYPE="text/css"> 
+	<SCRIPT src="calFunct.js"></SCRIPT>  
+	
+</HEAD>
+<BODY>
+<DIV id="frame">
+<H1> Mobile version </H1>
+	<FORM NAME="Cal">
+	<INPUT TYPE="text" NAME="Screen"> <BR/>
+	<INPUT TYPE="button" NAME="clear" VALUE="Clear" onclick=dclear()>
+	<INPUT type="button" name="cHist" value="cHis" onclick=hclear()>
+	<INPUT TYPE="button" name="back" value="&#8592" onclick=backs()>
+	<INPUT type="button" name="divisors" value="Divs" onclick=divisorResult()>
+	<INPUT type="button" name="plus" VALUE="&#43" onclick=draw("+","+")><br/>
+	<INPUT type="button" name="seven" value="7" onclick=draw("7","7")>
+	<INPUT type="button" name="eight" value="8" onclick=draw("8","8")>
+	<INPUT type="button" name="nine" value="9" onclick=draw("9","9")>
+	<INPUT type="button" name="isprime" value="Prm?" onclick=prmResult()>	
+	<INPUT type="button" name="minus" value="&#8722" onclick=draw("-","-")><br/>
+	<INPUT type="button" name="four" value="4" onclick=draw("4","4")>
+	<INPUT type="button" name="five" value="5" onclick=draw("5","5")>
+	<INPUT type="button" name="six" value="6" onclick=draw("6","6")>
+	<INPUT type="button" name="prmsb" value="PrmB" onclick=primesBetween()>
+	<INPUT type="button" name="mul" value="&times" onclick=draw("&times","*")><br/>
+	<INPUT type="button" name="one" value="1" onclick=draw("1","1")>
+	<INPUT type="button" name="two" value="2" onclick=draw("2","2")>
+	<INPUT type="button" name="three" value="3" onclick=draw("3","3")>
+	<INPUT type="button" name="power" value="pow" onclick=draw("pow(","Math.pow(")>
+	<INPUT type="button" name="div" value="&divide" onclick=draw("&divide","/")><br/>
+	<INPUT type="button" name="point" value="." onclick=draw(".",".")>
+	<INPUT type="button" name="zero" value="0" onclick=draw("0","0")>
+	<INPUT type="button" name="leftp" value="&#40" onclick=draw("(","(")> 
+	<INPUT type="button" name="leftp" value="&#41" onclick=draw(")",")")>
+	<INPUT type="button" name="equal" value="=" onclick=EvaluateIt()> <br/>
+	<INPUT type="button" name="pi" value="&#960" onclick=draw("&#960","Math.PI")>
+	<INPUT type="button" name="euler" value="e" onclick=draw("e","Math.E")>
+	<INPUT type="button" name="coma" value= "," onclick=draw(",",',')> 
+	<INPUT type="button" name="factorial" value= "x!" onclick=zfactorial()>
+	<INPUT type="button" name="PrimeFactorial" value= "prm!" onclick=prmFactorial()><br/>
+	<P id="History"> </P>
+</DIV>
+	</BODY>
+</HTML>

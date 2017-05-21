@@ -1,4 +1,7 @@
-## Self Written Programs and Algorithms for academic and research purposes.
-Everyone is free to copy, modify and share with others.
+## Programs and Algorithms for entertainment, academic and research purposes.
+### Author: Zaeem Yousaf
+
+
+Everyone is free to copy the code, modify and share with others.
 
 Each directory contains further help

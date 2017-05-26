@@ -1,0 +1,6 @@
+1): group_Chat.txt		# contains raw data emailed from whatsapp group
+2): analysis_Posts.py		# python program that performs statistics and generate analysis_Result/table.txt
+3): time_Spliter.py		# python program that makes timeseries against comulative frequence
+4): running (3) 		# will generate all files that are in analysis_Result/timeline folder
+5): running (2)			# will generate analysis_Result/table.txt
+

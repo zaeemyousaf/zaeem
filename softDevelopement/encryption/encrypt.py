@@ -153,4 +153,4 @@ def encodeF(Name,engI=0,symI=0,numI=0,hold=[],igPtrn=2):
 # working fine 
 # encodeF("simple.txt",engI=-1,symI=0,numI=0,hold=[],igPtrn=0)
 import sys
-encodeF(sys.argv[1],engI=-1,symI=0,numI=0,hold=[],igPtrn=0)
+encodeF(sys.argv[1],engI=1,symI=0,numI=0,hold=['a','e'],igPtrn=1)

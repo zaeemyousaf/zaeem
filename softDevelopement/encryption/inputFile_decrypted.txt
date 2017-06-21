@@ -1,5 +1,0 @@
-1): This is first line
-2): This is secone line
-
-3): above is empty line
-

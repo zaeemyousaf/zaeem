@@ -1,0 +1,53 @@
+# Command logfile created by Lynx 2.8.8pre.4 (04 Feb 2014)
+# Arg0 = lynx
+# Arg1 = -cmd_log=sample.txt
+# Arg2 = http://pakturk.pk/login.php?rUrl=pakturk.pk%2Fstudent%2Fcam_reports.php%3Fay_id%3D22
+key ^J
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key Down Arrow
+key ^J
+key <tab>
+<start username>
+key Z
+key Y
+key <delete>
+key <delete>
+key Z
+key A
+key E
+key E
+key M
+key <space>
+key Y
+key o
+key u
+key <delete>
+key <delete>
+key O
+key U
+key S
+key A
+key F
+<end username>
+key <tab>
+<start password>
+key 1
+key 1
+key 2
+key 2
+key 3
+key 3
+<end password>
+key <tab>
+key <tab>
+key ^J
+key a

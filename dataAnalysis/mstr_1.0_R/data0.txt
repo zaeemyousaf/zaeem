@@ -210,3 +210,8 @@ index	date	intensity	reason	food	health	wPressure
 191	09/06/2017	3	4	Normal	2	1
 192	11/06/2017	2	3	Normal	1	0
 193	18/06/2017	0	5	Normal	1	0
+194	25/06/2017	0	5	Tomato	1	0
+195	30/06/2017	3	4	Egg	1	0
+196	04/07/2017	3	4	Egg	1	0
+197	09/07/2017	0	5	Egg	1	1
+198	14/07/2017	0	5	Egg	2	3

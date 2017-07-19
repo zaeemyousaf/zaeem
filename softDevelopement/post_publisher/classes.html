@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<HTML>
+<!-- Template saved in ~/Template -->
+<HEAD>
+	<TITLE> Classes </TITLE>
+	<LINK REL="stylesheet" TYPE="text/css" HREF="myclass.css">
+	<SCRIPT TYPE="text/javascript" src="myfun.js"> </SCRIPT>
+</HEAD>
+<!--
+	Disscussion forum
+	Layout:
+		login system
+		left-side users picture
+		his post
+		reply button, removal button, update button
+	Technique:
+		sign up utility
+		save each users meta data
+		creat each users Folder that contains:
+			1): picture
+			2): posts
+			3): login information
+	-->
+<BODY>
+	<DIV id="heading">
+	<H1 align="center"> Publish your posts <H1>
+	<DIV>
+
+	<DIV id="myPosts">
+	<P class="post">
+	This is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here write something more and moreThis is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here
+	write something more and more
+	</p>
+	
+	<p class="post">
+	This is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here
+	write something more and moreThis is para graph another line another line goes here
+	write something more and more
+	</p>
+	
+	</DIV>
+<!-------------------------text area-->
+	<DIV id="posting">
+	<LABLE STYLE="font-size:20px"> Write your post </LABLE>
+	
+	<TEXTAREA id="editor" ONCLICK="clearEditor()">Share your thoughts...</TEXTAREA>
+	</DIV>
+	<!-------------------------button -->
+	
+	<FORM NAME="actions">
+	<INPUT TYPE="button" value="Publish" name="post"
+	onclick="publishPost()">
+	</FORM>
+</BODY>
+</HTML>

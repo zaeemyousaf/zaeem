@@ -1,0 +1,38 @@
+body {
+	background-color: #02Af22;
+	}
+	/*-------------------*/
+	
+#heading {
+	background-color: White;
+	height:50px;
+	border-radius: 25px;
+	padding-left: 10px;
+	}
+	/*-------------------*/
+	
+.post {
+	background-color: #f2A03f;
+	font-size: 20px;
+	margin-left: 50px;
+	padding:10px;
+	border-radius: 15px;
+	word-wrap: break-word;
+	
+	}
+	/*-------------------*/
+#editor {
+	background-color: #f2f2f2;
+	width:94%;
+	height: 100px;
+	padding: 2%;
+	}
+#posting{
+	margin-left: 50px;
+	padding-left: 2px;
+	}
+input[type="button"] {
+    	width: 120px;
+    	margin-left: 50%;
+    	height: 30px;
+} 

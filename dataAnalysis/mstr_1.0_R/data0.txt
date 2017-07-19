@@ -215,3 +215,4 @@ index	date	intensity	reason	food	health	wPressure
 196	04/07/2017	3	4	Egg	1	0
 197	09/07/2017	0	5	Egg	1	1
 198	14/07/2017	0	5	Egg	2	3
+199	18/07/2017	1	2	Egg	1	3

@@ -215,4 +215,15 @@ index	date	intensity	reason	food	health	wPressure
 196	04/07/2017	3	4	Egg	1	0
 197	09/07/2017	0	5	Egg	1	1
 198	14/07/2017	0	5	Egg	2	3
-199	18/07/2017	1	2	Egg	1	3
+199	18/07/2017	1	2	Mangoe	1	3
+200	20/07/2017	0	5	Mangoe	1	2
+201	21/07/2017	0	5	Mangoe	1	2
+# registered for exam
+202	28/07/2017	0	5	Mangoe	3	2
+203	29/07/2017	2	4	Mangoe	2	3
+204	29/07/2017	1	4	Mangoe	2	3
+205	04/08/2017	3	2	Chicken	1	2
+206	08/08/2017	0	5	Normal	1	3
+207	10/08/2017	3	2	Mangoe	1	2
+208	12/08/2017	3	4	Chicken	1	2
+209	18/08/2017	3	4	Egg	1	2

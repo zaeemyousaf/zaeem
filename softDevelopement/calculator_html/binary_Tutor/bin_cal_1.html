@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+Author: Zaeem Yousaf
+Teacher: Sir Naghman Hameed (PakTurk)
+//-->
+<html>
+<head>
+	<title>PakTurk Conversion Calculator</title>
+	<SCRIPT LANGUAGE= "JavaScript">
+	sol="";
+		function simple_decimal_converter(bits){
+			// copy value stored in box into x
+			x=(input.decimal_input.value).split(".");
+			integral_part=eval(x[0]);
+			frac_part=eval("."+x[1]);
+			bin_integral_part=int2bin(integral_part);
+			bits_occupied_by_int_part=bin_integral_part.length;
+			remaining_bits=eval(bits)-(bits_occupied_by_int_part);
+			bin_frac_part=frac2bin(frac_part,remaining_bits);
+
+			sol+="==============================:";
+			sol+="here goes your solution"+ "</br>";
+			sol+="Step 1: Split into integral part and decimal part" + "</br>";
+			sol+= integral_part + " <-----> " + frac_part +"</br>";
+			sol+="Step 2: Convert integral part into binary ";
+			sol+=bin_integral_part+ "<sub> 2 </sub> </br>";
+			sol+= "Step 3: Convert decimal part into binary by iterative multiplication of 2" +" <-----> "+ bin_frac_part+ "<sub> 2 </sub> </br>";
+			sol+="Step 4: Writing integral part and fractional part adjacent with binary point at its location "+ "</br>";
+			sol+=bin_integral_part+"."+ bin_frac_part+ "<sub> 2 </sub> </br>";
+			sol+="===============================: ending solution"+
+			"</br>";
+
+			document.getElementById("solution").innerHTML=sol;
+		}
+		//-------------------------------
+		function advance_decimal_converter(mnt_bits,exp_bits){
+			// copy value stored in box into x
+			var x=(input.decimal_input_1.value).split(".");
+			
+			var integral_part=eval(x[0]);
+			
+			var frac_part=eval("."+x[1]);
+			
+			var bin_integral_part=int2bin(integral_part);
+
+			var expo=bin_integral_part.length;
+			
+			var bits_occupied_by_int_part=bin_integral_part.length;
+			
+			var remaining_bits_for_mnt=eval(mnt_bits)-(bits_occupied_by_int_part+1);
+			
+			var bin_frac_part=frac2bin(frac_part,remaining_bits_for_mnt);
+			
+			var expo_sign=1;
+			
+			if(eval(x) < 0){
+				var mnt_sign=-1; // negative number
+			}
+			else{
+				mnt_sign=1; //positive number
+			}
+			
+			if(bits_occupied_by_int_part == 1 && bin_integral_part=="0" && bin_frac_part[0]=="0"){
+				// sign is negative
+			expo_sign=-1;
+			}
+			var exponent=expo*expo_sign;
+			sol=document.getElementById("solution").innerHTML;
+
+			sol+="==============================:";
+			sol+="here goes your solution"+ "</br>";
+			sol+="Step 1: Split into integral part and decimal part" + "</br>";
+			sol+= integral_part + " <-----> " + frac_part +"</br>";
+			sol+="Step 2: Convert integral part into binary ";
+			sol+=bin_integral_part+ "<sub> 2 </sub> </br>";
+			sol+= "Step 3: Convert decimal part into binary by iterative multiplication of 2" +" <-----> "+ bin_frac_part+ "<sub> 2 </sub> </br>";
+			sol+="Step 4: Writing integral part and fractional part adjacent with binary point at its location "+ "</br>";
+			sol+=bin_integral_part+"."+ bin_frac_part+ "<sub> 2 </sub> </br>";
+			if (bin_integral_part.length ==1 && bin_integral_part[0]==0){
+				// then no need to move binary point
+				sol+="Step 5: No need to move binary point </br>";
+			}
+			else{
+			sol+="Step 5: Moving binary point to left "+ expo + " Places </br>";
+
+			sol+="."+bin_integral_part+bin_frac_part+"</br>";
+		}
+			sol+="Step 6: exponent is equal to "+ exponent+ ": the places we moved left </br>";
+			sol+="Step 7: convert exponent into binary "+int2bin(exponent)+"</br>";
+			sol+="Step 8: append sign bit before binary point: '0' for +ve and '1' for -ve </br>";
+			ans="";
+			if (eval(x) < 0){
+				// append 1
+				ans="1."+bin_integral_part+bin_frac_part;
+				sol+=ans+"</br>";
+			}
+			else{
+				ans="0."+bin_integral_part+bin_frac_part;
+				sol+=ans+"</br>";
+
+			}
+			sol+="Step 9: append power's binary value </br>";
+			var unnormalized=ans+" "+ int2bin(exponent,exp_bits);
+			sol+=unnormalized+"</br> ";
+			sol+="Step 10: Normalize your mantissa part </br>";
+			if (unnormalized[0] == unnormalized[2]){
+				//not normalized
+				
+			}
+
+			sol+="===============================: ending solution"+
+			"</br>";
+
+			document.getElementById("solution").innerHTML=sol;
+		}
+		//-------------------------------
+		function int2bin(x,bits){
+			// binary digs are stored in binary array
+			binary=[];
+			counter=0;
+			remainder=x%2;
+			while(x > 1){
+				remainder=x%2;
+				binary[counter++]=remainder;
+				x=Math.floor(x/2);
+
+			}
+			if (x != 0){
+				binary[counter++]=1;
+			}
+			else{
+				binary[counter++]=0;
+			}
+			// no. zeros to append
+			empty_bits=bits-binary.length;
+			for (var i=0; i<empty_bits; i++){
+				binary[counter++]=0;
+			}
+			// array contains reversed digits
+			// need to convert from array to string
+			binary_str=(binary.reverse()).join("");
+			return(binary_str);
+		}
+		//------------------------------
+		function frac2bin(x,bits=8){
+			// it computes binary of decimal part
+			// e.g frac2bin(.5) = 1
+			// binary digs are stored in binary array
+			binary=[];
+			counter=0;
+			product=x*2;
+			while(x > 0 && binary.length <= bits){
+				int_part=Math.floor(product);
+				binary[counter++]=int_part;
+				x=product-int_part;
+				product=2*x;
+
+			}
+			// 	binary[counter++]=0;
+			// }
+			// still need to fill left most zeros
+			if (binary.length < bits){
+				// adjust zeros
+				n_zeros_to_append=bits-binary.length;
+				for (i=0; i<n_zeros_to_append; i++){
+					binary[counter++]=0;
+				}
+			} 
+			// need to convert from array to string
+			binary_str=(binary.join(""));
+			return(binary_str);
+		}
+		//------------------------------
+		function clrScreen(){
+			document.getElementById("solution").innerHTML="";
+			sol="";
+		}
+
+
+	</SCRIPT>
+</head>
+<body>
+<h1>PakTurk's Binary Number conversion Calculator</h1>
+<div id="screen">
+	<form name="input">
+		<h3> from Decimal to binary </h3>
+		<input type="button" name="clr" onclick="clrScreen()" value="clear Screen">
+		</br>
+		Enter number of bits to represent the number:
+		<input type="textarea" name="no_bits" size="10" value="12">
+		</br>
+		From Decimal to binary fixed point: 
+		<input type="textarea" name="decimal_input" value="10.5">
+		<input type="button" name="dec_converter" value="Convert" onclick="simple_decimal_converter(input.no_bits.value)">
+		
+		</br>
+		</br>
+		From Decimal to binary floating point:
+		<input type="textarea" name="decimal_input_1" value="10.75">
+		</br>
+		express mantissa in 2's complement
+		<!-- decimal mentissa scheme //-->
+		<input type="checkbox" name="dec_mnt_scheme"></input>
+
+		express exponent in 2's complement
+		<input type="checkbox" name="dec_expo_scheme" checked></input>
+		
+
+		</br>
+		no. of bits for mantissa:
+		<input type="textarea" name="bits_mantissa" value="8" size=10>
+		no. of bits for expo:
+		<input type="textarea" name="bits_expo" value="4" size=10>
+
+		<input type="button" name="dec_converter_2" value="Convert" onclick="advance_decimal_converter(input.bits_mantissa.value, input.bits_expo.value)">
+		<br>
+		<br>
+
+		<!-- +++++++++++++++++++++++++++ -->
+
+		<h3>from binary to Decimal </h3>
+		binary number with fixed point: 
+		<input type="textarea" name="binary_input" value="1010.001">
+		<input type="button" name="bin_converter" value="Convert" onclick="simple_bin_converter">
+		</br>
+		</br>
+		mantissa expressed in two's complement
+		<input type="checkbox" name="bin_mnt_scheme" ></input>
+
+		exponent expressed in 2's complement
+		<input type="checkbox" name="bin_expo_scheme" checked></input>
+		</br>
+		bin mantissa with binary point: 
+		<input type="textarea" name="bin_mnt" value="0.10010">
+		bin expo: 
+		
+		<input type="textarea" name="bin_expo" value="1100">
+		<input type="button" name="bin_converter" value="Convert" onclick="advance_bin_converter">
+		</br>
+		
+		
+	</form>
+	<p id="solution"></p> 
+</div>
+
+</body>
+</html>

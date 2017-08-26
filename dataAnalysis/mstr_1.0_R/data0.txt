@@ -227,3 +227,5 @@ index	date	intensity	reason	food	health	wPressure
 207	10/08/2017	3	2	Mangoe	1	2
 208	12/08/2017	3	4	Chicken	1	2
 209	18/08/2017	3	4	Egg	1	2
+210	22/08/2017	0	5	Apple	2	3
+211	23/08/2017	0	5	Chicken	2	3

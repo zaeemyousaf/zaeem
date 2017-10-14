@@ -69,3 +69,6 @@ legend("left","ShtEdg",text.col='green')	# Short Edging
 lines(as.Date(dates3),1:length(dates3),col='blue')
 legend("topleft","LngEdg",text.col='blue')	# Long Edging
 dev.off()	# closing pdf to save
+#barplot(table(diff(dates0)))
+print(dates0)
+#barplot(table(diff(as.Date(dates3))))

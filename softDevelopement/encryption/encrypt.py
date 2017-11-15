@@ -144,7 +144,7 @@ def encodeF(Name,engI=0,symI=0,numI=0,hold=[],igPtrn=2):
 	inp=open(Name,'r')
 	Line=inp.readline()
 	while Line!='':
-		result=encodeS(Line,engI=engI,symI=symI,hold=hold,igPtrn=igPtrn)['encodedString']
+		result=encodeS(Line,engI=engI,symI=symI,numI=numI, hold=hold,igPtrn=igPtrn)['encodedString']
 		out.write(result)
 		Line=inp.readline()
 	out.close()

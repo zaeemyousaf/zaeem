@@ -1,247 +1,247 @@
-parameters	5	1	2	[]	1
-#~R+-?tjrrisaqoly>-+mtdzljs
-#~mjtf-iaya
-#~rjaxoss~{1:~Hfbntzaq yirisg. 2:~PL,~3" Raye. 4:Fncijtd,~5"Njmrixitn. 6:~Ftoi,~7" MeflyhUuwptsj}
-#~istjnxiyy~{3:~AktjrQosg~Eignnl,~2" FfyewSmowt~Eignnl,~1" BiyhTuy Jdlisg. 0:~Njmrixitn|
-#~Hjaqtm }1" xtwosg. 2:~ntt~bfd. 3:~pfisfzl|
-#~WtrpPwexszrj }1" qob,~2" milh. 3:~ectwere|
+parameters	5	1	2	[]	0
+$~W++?yjwrnsfqtld>++rtizqjx
+$~rjyf+ifyf
+$~wjfxtsx~}3"~Mfgnyzfq~ynrnsl.~4"~UL.~5"~Rfyj.~6"Fscnjyd.~7"Sjrrnxnts.~8"~Ktti.~9"~MjfqymUzwutxj|
+$~nsyjsxnyd~}5"~FkyjwQtsl~Jilnsl.~4"~FkyjwXmtwy~Jilnsl.~3"~BnymTzy~Jilnsl.~2"~Sjrrnxnts|
+$~Mjfqym~}3"~xywtsl.~4"~sty~gfi.~5"~ufnskzq|
+$~BtwpUwjxxzwj~}3"~qtb.~4"~mnlm.~5"~jcywjrj|
 
-isdjx	dftj	nnyessntd	wefstn	ftoi	meflyh	wUrjsxuwe
-1	10/05 2015	1	1	Fpulj	2	1
-2	14/05 2015	3	2	Fpulj	2	1
-3	18/05 2015	2	2	Fpulj	2	1
-4	23/05 2015	1	1	Fpulj	2	1
-5	25/05 2015	3	4	Fpulj	2	1
-6	28/05 2015	3	4	Fpulj	2	1
-7	02/06 2015	3	2	Fpulj	3	1
-8	06/06 2015	3	2	Rasgt	2	1
-9	15/06 2015	0	5	Fpulj	2	1
-10	19 06/2015	0	5	Ntrraq	3	3
-11	19 06/2015	2	2	Ntrraq	3	3
-12	22 06/2015	3	4	Ntrraq	2	3
-13	28 06/2015	3	2	Mfnlo	1	1
-14	02 07/2015	2	2	Mfnlo	1	3
-15	06 07/2015	3	6	Ntrraq	3	2
-16	10 07/2015	0	5	Ntrraq	3	3
-17	11 07/2015	0	5	Aupqe	1	3
-18	14 07/2015	2	1	Mfnlo	1	2
-19	22 07/2015	3	3	Bjek	1	1
-20	31 07/2015	2	1	Mfnlo	1	1
-21	03 08/2015	3	2	Mztyos	1	2
-22	06 08/2015	3	2	Hzlba	1	2
-23	10 08/2015	3	4	Mztyos	3	1
-24	12 08/2015	3	2	Mfnlo	2	0
-25	17 08/2015	3	2	Mfnlo	2	2
-26	20 08/2015	3	2	Aupqe	2	3
-27	22 08/2015	3	4	Aupqe	2	3
-28	23 08/2015	2	2	Aupqe	2	2
-29	25 08/2015	2	2	Aupqe~	2	3
-30	01 09/2015	2	2	Aupqe	1	3
-31	03 09/2015	2	2	Aupqe	2	2
-32	05 09/2015	0	5	Aupqe	2	2
-33	06 09/2015	0	5	Aupqe	2	2
-34	07 09/2015	3	2	Aupqe	2	2
-35	12 09/2015	3	2	Ntrraq	1	2
-36	20 09/2015	0	5	Aupqe	3	3
-37	21 09/2015	1	7	Aupqe	3	3
-38	23 09/2015	3	2	Aupqe	2	3
-39	26 09/2015	3	2	Mztyos	2	3
-40	28 09/2015	3	4	Mztyos	3	3
-41	30 09/2015	3	2	Ntrraq	3	3
-42	03 10/2015	3	2	Ntrraq	3	3
-43	10 10/2015	0	5	Sbejt	1	0
-44	10 10/2015	3	2	Sbejt	1	0
-45	11 10/2015	0	5	Sbejt	1	0
-46	14 10/2015	3	4	Sbejt	1	0
-47	15 10/2015	0	5	Sbejt	1	2
-48	18 10/2015	3	2	Sbejt	2	3
-49	23 10/2015	3	4	Cmihkjn	2	3
-50	23 10/2015	3	4	Cmihkjn	3	3
-51	29 10/2015	0	5	Sbejt	1	2
-52	29 10/2015	3	4	Aupqe	2	2
-53	02 11/2015	3	3	Aupqe	2	2
-54	03 11/2015	3	2	Aupqe	2	2
-55	12 11/2015	3	7	Aupqe	1	3
-56	15 11/2015	3	4	Sbejt	2	3
-57	15 11/2015	0	5	Sbejt	2	3
-58	19 11/2015	3	2	Sbejt	2	2
-59	26 11/2015	1	4	Mztyos	2	2
-60	29 11/2015	0	5	Sbejt	2	2
-61	02 12/2015	0	5	Aupqe	3	1
-62	05 12/2015	1	7	Aupqe	3	1
-63	09 12/2015	1	7	Sbejt	1	2
-64	10 12/2015	2	4	Sbejt	1	1
-65	13 12/2015	0	5	Sbejt	1	1
-66	15 12/2015	1	4	Mztyos	1	1
-67	18 12/2015	3	4	Sbejt	2	1
-68	21 12/2015	3	4	Sbejt	2	1
-69	24 12/2015	0	5	Sbejt	1	1
-70	25 12/2015	0	5	Sbejt	1	0
-71	27 12/2015	3	4	Aupqe	1	0
-72	02 01/2016	0	5	Aupqe	1	0
-73	07 01/2016	0	5	Aupqe	1	1
-74	09 01/2016	0	5	Ntrraq	1	2
-75	16 01/2016	0	5	Ntrraq	1	2
-76	18 01/2016	2	1	Sbejt	1	0
-77	18 01/2016	0	5	Ntrraq	3	0
-78	18 01/2016	0	5	Aupqe	3	0
-79	25 01/2016	3	2	Aupqe	2	1
-80	27 01/2016	0	5	Sbejt	1	2
-81	29 01/2016	3	4	Sbejt	1	2
-82	08 02/2016	3	4	Mztyos	1	2
-83	14 02/2016	2	4	Sbejt	1	2
-84	22 02/2016	0	5	Mztyos	2	2
-85	23 02/2016	3	2	Ntrraq	2	2
-86	27 02/2016	3	3	Ntrraq	1	0
-87	01 03/2016	0	5	Mztyos	2	2
-88	06 03/2016	3	2	Sbejt	1	2
-89	12 03/2016	3	2	Sbejt	1	1
-90	18 03/2016	3	4	Ntrraq	1	1
-91	22 03/2016	3	4	Ntrraq	1	1
-92	27 03/2016	3	3	Ntrraq	1	2
-93	03 04/2016	0	5	Aupqe	1	2
-94	07 04/2016	0	5	Ntrraq	1	2
-95	14 04/2016	3	7	Ntrraq	1	2
-96	18 04/2016	0	5	Cmihkjn	1	2
-97	22 04/2016	3	2	Ntrraq	1	2
-98	29 04/2016	3	3	Cmihkjn	2	3
-99	02 05/2016	1	4	Ntrraq	2	3
-100	08/05 2016	0	5	Sowmfl	1	3
-101	09/05 2016	0	5	Sowmfl	1	3
-102	10/05 2016	0	5	Sowmfl	1	3
-103	17/05 2016	0	5	Sowmfl	1	3
-104	19/05 2016	2	7	Ruyttn	1	0
-105	20/05 2016	3	4	Ruyttn	1	0
-106	27/05 2016	0	5	Hhncpes	1	0
-107	01/06 2016	3	4	Ruyttn	2	0
-108	02/06 2016	3	4	Ruyttn	2	0
-109	11/06 2016	3	2	Sowmfl	2	0
-110	15/06 2016	3	2	Xwjey	2	0
-111	17/06 2016	3	4	Hhncpes	2	1
-112	20/06 2016	3	4	Hhncpes	2	1
-113	26/06 2016	0	5	Hhncpes	1	0
-114	29/06 2016	1	5	Hhncpes	1	0
-115	30/06 2016	3	2	Rasgtex	2	0
-116	06/07 2016	0	5	Rasgtex	2	0
-117	07/07 2016	3	1	Rasgtex	1	0
-118	12/07 2016	3	2	Sowmfl	1	0
-119	17/07 2016	3	1	Iayex	1	0
-120	21/07 2016	0	5	Rasgtex	1	0
-121	22/07 2016	0	5	Rasgtex	1	0
-122	29/07 2016	0	5	Iayex	1	0
-123	30/07 2016	3	2	Sowmfl	2	0
-124	05/08 2016	3	2	Rasgtex	2	0
-125	07/08 2016	3	2	rasgtex	2	0
-126	12/08 2016	3	2	Fpulj	2	0
-127	15/08 2016	0	5	Fpulj	2	0
-128	17/08 2016	0	5	Fpulj	1	0
-129	20/08 2016	3	3	Fpulj	3	0
-130	29/08 2016	1	1	Fpulj	3	2
-131	07/09 2016	3	2	Xozp	1	3
-132	08/09 2016	3	2	Xozp	2	3
-133	08/09 2016	3	2	Xozp	2	3
-134	21/09 2016	3	1	Ruyttn	1	3
-135	28/09 2016	1	7	Ruyttn	1	3
-136	01/10 2016	0	5	Jgl	2	3
-137	08/10 2016	0	5	Gejf	1	3
-138	08/10 2016	3	2	Kils	1	3
-139	21/10 2016	3	2	FlrMnlp	2	3
-140	24/10 2016	1	4	FlrMnlp	2	3
-141	29/10 2016	0	5	FlrMnlp	3	3
-142	01/11 2016	0	5	FlrMnlp	3	3
-143	05/11 2016	2	1	FlrMnlp	3	0
-144	09/11 2016	0	5	Reicnnj	3	2
-145	09/11 2016	0	5	Reicnnj	3	2
-146	12/11 2016	2	2	Krziy	3	3
-147	19/11 2016	1	2	Krziy	2	1
-148	21/11 2016	3	4	IFwunt	1	1
-#~Dfd~jtisei Re~-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-149	27/11 2016	1	2	Hhncpes	1	2
-150	04/12 2016	0	5	Sowmfl	1	3
-#~I~jtisei xcmotl
-151	07/12 2016	0	5	Baqnzt	1	3
-152	12/12 2016	0	5	Ruyttn	1	2
-153	14/12 2016	3	2	Ruyttn	1	3
-#~wnnyew aahayitn
-154	19/12 2016	3	4	Ruyttn	2	2
-155	19/12 2016	1	2	Ruyttn	2	2
-156	22/12 2016	3	5	Ruyttn	2	2
-157	29/12 2016	2	4	Ruyttn	2	3
-158	30/12 2016	1	2	Ruyttn	2	3
-#~shhtoq jxfmx
-159	07/01 2017	0	5	Sowmfl	1	3
-160	09/01 2017	0	5	Sowmfl	1	3
-161	14/01 2017	1	4	Ruyttn	1	1
-162	14/01 2017	0	5	Ruyttn	1	1
-#~esd~ok xcmotl~ecars
-163	22/01 2017	0	5	Sowmfl	1	1
-164	24/01 2017	1	4	Sowmfl	1	2
-165	27/01 2017	1	4	Lhflba	1	1
-166	29/01 2017	3	2	Kixh	2	2
-167	04/02 2017	3	3	Ruyttn	2	0
-168	20/02 2017	1	7	Lrfmx	1	3
-169	26/02 2017	2	4	Lrfmx	1	2
-170	05/03 2017	3	4	Iayex	1	2
-171	12/03 2017	3	4	Lrfmx	1	2
-172	15/03 2017	3	2	Iayex	2	3
-173	16/03 2017	2	2	Iayex	2	1
-#~Dfd~ljfy
-174	26/03 2017	1	4	Sowmfl	1	0
-175	30/03 2017	3	2	Sowmfl	1	0
-#~Syawtjd~hfri jxjrhixe
-176	06/04 2017	0	5	Sowmfl	1	1
-177	08/04 2017	0	5	Sowmfl	1	0
-178	09/04 2017	0	5	Sowmfl	2	1
-179	16/04 2017	2	4	Sowmfl	1	2
-180	23/04 2017	3	4	Ruyttn	1	2
-#~esd~ok mawd~ecewcnsj
-181	03/05 2017	0	5	Sowmfl	1	3
-182	03/05 2017	0	5	Sowmfl	1	3
-183	04/05 2017	3	2	Sowmfl	1	3
-184	10/05 2017	0	5	Iayex	1	3
-#~ecar xtfryei,~fnnfl~tjrr ft~shhtoq
-185	14/05 2017	3	2	Iayex	1	3
-186	19/05 2017	2	5	Hhncpes	1	3
-#~ecar jniei,~fnnfl~tjrr ft~shhtoq
-#~vfcftnos xtfryei
-187	24/05 2017	3	4	Sowmfl	2	2
-188	29/05 2017	0	5	Sowmfl	1	1
-189	01/06 2017	2	4	Sowmfl	1	1
-190	06/06 2017	0	5	Xwjey	1	1
-191	09/06 2017	3	4	Sowmfl	2	1
-192	11/06 2017	2	3	Sowmfl	1	0
-193	18/06 2017	0	5	Sowmfl	1	0
-194	25/06 2017	0	5	Yorayo	1	0
-195	30/06 2017	3	4	Jgl	1	0
-196	04/07 2017	3	4	Jgl	1	0
-197	09/07 2017	0	5	Jgl	1	1
-198	14/07 2017	0	5	Jgl	2	3
-199	18/07 2017	1	2	Rasgte	1	3
-200	20/07 2017	0	5	Rasgte	1	2
-201	21/07 2017	0	5	Rasgte	1	2
-#~rjgnsyewei kow jxfm
-202	28/07 2017	0	5	Rasgte	3	2
-203	29/07 2017	2	4	Rasgte	2	3
-204	29/07 2017	1	4	Rasgte	2	3
-205	04/08 2017	3	2	Hhncpes	1	2
-206	08/08 2017	0	5	Sowmfl	1	3
-207	10/08 2017	3	2	Rasgte	1	2
-208	12/08 2017	3	4	Hhncpes	1	2
-209	18/08 2017	3	4	Jgl	1	2
-210	22/08 2017	0	5	Fpulj	2	3
-211	23/08 2017	0	5	Hhncpes	2	3
-212	28/08 2017	3	4	Hhncpes	1	3
-213	04/09 2017	3	4	Ruyttn	1	2
-214	08/09 2017	0	5	Ruyttn	1	2
-215	10/09 2017	3	4	Fpulj	1	2
-216	15/09 2017	1	2	Sowmfl	1	3
-217	27/09 2017	0	5	Jgl	1	3
-218	28/09 2017	1	4	Jgl	1	3
-219	02/10 2017	3	4	Jgl	1	3
-220	02/10 2017	1	4	Jgl	1	3
-221	05/10 2017	0	5	Jgl	1	3
-222	14/10 2017	3	4	Jgl	1	3
-223	19/10 2017	3	4	Jgl	1	3
-224	28/10 2017	3	2	Sowmfl	1	3
-225	06/11 2017	1	7	Jgl	1	3
-#~ecars~esdnnl
+nsijc	ifyj	nsyjsxnyd	wjfxts	ktti	mjfqym	bUwjxxzwj
+3	32 27 4237	3	3	Fuuqj	4	3
+4	36 27 4237	5	4	Fuuqj	4	3
+5	30 27 4237	4	4	Fuuqj	4	3
+6	45 27 4237	3	3	Fuuqj	4	3
+7	47 27 4237	5	6	Fuuqj	4	3
+8	40 27 4237	5	6	Fuuqj	4	3
+9	24 28 4237	5	4	Fuuqj	5	3
+0	28 28 4237	5	4	Rfslt	4	3
+1	37 28 4237	2	7	Fuuqj	4	3
+32	31 28 4237	2	7	Stwrfq	5	5
+33	31 28 4237	4	4	Stwrfq	5	5
+34	44 28 4237	5	6	Stwrfq	4	5
+35	40 28 4237	5	4	Rfslt	3	3
+36	24 29 4237	4	4	Rfslt	3	5
+37	28 29 4237	5	8	Stwrfq	5	4
+38	32 29 4237	2	7	Stwrfq	5	5
+39	33 29 4237	2	7	Fuuqj	3	5
+30	36 29 4237	4	3	Rfslt	3	4
+31	44 29 4237	5	5	Gjjk	3	3
+42	53 29 4237	4	3	Rfslt	3	3
+43	25 20 4237	5	4	Rzyyts	3	4
+44	28 20 4237	5	4	Mzqbf	3	4
+45	32 20 4237	5	6	Rzyyts	5	3
+46	34 20 4237	5	4	Rfslt	4	2
+47	39 20 4237	5	4	Rfslt	4	4
+48	42 20 4237	5	4	Fuuqj	4	5
+49	44 20 4237	5	6	Fuuqj	4	5
+40	45 20 4237	4	4	Fuuqj	4	4
+41	47 20 4237	4	4	Fuuqj~	4	5
+52	23 21 4237	4	4	Fuuqj	3	5
+53	25 21 4237	4	4	Fuuqj	4	4
+54	27 21 4237	2	7	Fuuqj	4	4
+55	28 21 4237	2	7	Fuuqj	4	4
+56	29 21 4237	5	4	Fuuqj	4	4
+57	34 21 4237	5	4	Stwrfq	3	4
+58	42 21 4237	2	7	Fuuqj	5	5
+59	43 21 4237	3	9	Fuuqj	5	5
+50	45 21 4237	5	4	Fuuqj	4	5
+51	48 21 4237	5	4	Rzyyts	4	5
+62	40 21 4237	5	6	Rzyyts	5	5
+63	52 21 4237	5	4	Stwrfq	5	5
+64	25 32 4237	5	4	Stwrfq	5	5
+65	32 32 4237	2	7	Xbjjy	3	2
+66	32 32 4237	5	4	Xbjjy	3	2
+67	33 32 4237	2	7	Xbjjy	3	2
+68	36 32 4237	5	6	Xbjjy	3	2
+69	37 32 4237	2	7	Xbjjy	3	4
+60	30 32 4237	5	4	Xbjjy	4	5
+61	45 32 4237	5	6	Hmnhpjs	4	5
+72	45 32 4237	5	6	Hmnhpjs	5	5
+73	41 32 4237	2	7	Xbjjy	3	4
+74	41 32 4237	5	6	Fuuqj	4	4
+75	24 33 4237	5	5	Fuuqj	4	4
+76	25 33 4237	5	4	Fuuqj	4	4
+77	34 33 4237	5	9	Fuuqj	3	5
+78	37 33 4237	5	6	Xbjjy	4	5
+79	37 33 4237	2	7	Xbjjy	4	5
+70	31 33 4237	5	4	Xbjjy	4	4
+71	48 33 4237	3	6	Rzyyts	4	4
+82	41 33 4237	2	7	Xbjjy	4	4
+83	24 34 4237	2	7	Fuuqj	5	3
+84	27 34 4237	3	9	Fuuqj	5	3
+85	21 34 4237	3	9	Xbjjy	3	4
+86	32 34 4237	4	6	Xbjjy	3	3
+87	35 34 4237	2	7	Xbjjy	3	3
+88	37 34 4237	3	6	Rzyyts	3	3
+89	30 34 4237	5	6	Xbjjy	4	3
+80	43 34 4237	5	6	Xbjjy	4	3
+81	46 34 4237	2	7	Xbjjy	3	3
+92	47 34 4237	2	7	Xbjjy	3	2
+93	49 34 4237	5	6	Fuuqj	3	2
+94	24 23 4238	2	7	Fuuqj	3	2
+95	29 23 4238	2	7	Fuuqj	3	3
+96	21 23 4238	2	7	Stwrfq	3	4
+97	38 23 4238	2	7	Stwrfq	3	4
+98	30 23 4238	4	3	Xbjjy	3	2
+99	30 23 4238	2	7	Stwrfq	5	2
+90	30 23 4238	2	7	Fuuqj	5	2
+91	47 23 4238	5	4	Fuuqj	4	3
+02	49 23 4238	2	7	Xbjjy	3	4
+03	41 23 4238	5	6	Xbjjy	3	4
+04	20 24 4238	5	6	Rzyyts	3	4
+05	36 24 4238	4	6	Xbjjy	3	4
+06	44 24 4238	2	7	Rzyyts	4	4
+07	45 24 4238	5	4	Stwrfq	4	4
+08	49 24 4238	5	5	Stwrfq	3	2
+09	23 25 4238	2	7	Rzyyts	4	4
+00	28 25 4238	5	4	Xbjjy	3	4
+01	34 25 4238	5	4	Xbjjy	3	3
+12	30 25 4238	5	6	Stwrfq	3	3
+13	44 25 4238	5	6	Stwrfq	3	3
+14	49 25 4238	5	5	Stwrfq	3	4
+15	25 26 4238	2	7	Fuuqj	3	4
+16	29 26 4238	2	7	Stwrfq	3	4
+17	36 26 4238	5	9	Stwrfq	3	4
+18	30 26 4238	2	7	Hmnhpjs	3	4
+19	44 26 4238	5	4	Stwrfq	3	4
+10	41 26 4238	5	5	Hmnhpjs	4	5
+11	24 27 4238	3	6	Stwrfq	4	5
+322	20 27 4238	2	7	Stwrfq	3	5
+323	21 27 4238	2	7	Stwrfq	3	5
+324	32 27 4238	2	7	Stwrfq	3	5
+325	39 27 4238	2	7	Stwrfq	3	5
+326	31 27 4238	4	9	Rzyyts	3	2
+327	42 27 4238	5	6	Rzyyts	3	2
+328	49 27 4238	2	7	Hmnhpjs	3	2
+329	23 28 4238	5	6	Rzyyts	4	2
+320	24 28 4238	5	6	Rzyyts	4	2
+321	33 28 4238	5	4	Stwrfq	4	2
+332	37 28 4238	5	4	Xbjjy	4	2
+333	39 28 4238	5	6	Hmnhpjs	4	3
+334	42 28 4238	5	6	Hmnhpjs	4	3
+335	48 28 4238	2	7	Hmnhpjs	3	2
+336	41 28 4238	3	7	Hmnhpjs	3	2
+337	52 28 4238	5	4	Rfsltjx	4	2
+338	28 29 4238	2	7	Rfsltjx	4	2
+339	29 29 4238	5	3	Rfsltjx	3	2
+330	34 29 4238	5	4	Stwrfq	3	2
+331	39 29 4238	5	3	Ifyjx	3	2
+342	43 29 4238	2	7	Rfsltjx	3	2
+343	44 29 4238	2	7	Rfsltjx	3	2
+344	41 29 4238	2	7	Ifyjx	3	2
+345	52 29 4238	5	4	Stwrfq	4	2
+346	27 20 4238	5	4	Rfsltjx	4	2
+347	29 20 4238	5	4	rfsltjx	4	2
+348	34 20 4238	5	4	Fuuqj	4	2
+349	37 20 4238	2	7	Fuuqj	4	2
+340	39 20 4238	2	7	Fuuqj	3	2
+341	42 20 4238	5	5	Fuuqj	5	2
+352	41 20 4238	3	3	Fuuqj	5	4
+353	29 21 4238	5	4	Xtzu	3	5
+354	20 21 4238	5	4	Xtzu	4	5
+355	20 21 4238	5	4	Xtzu	4	5
+356	43 21 4238	5	3	Rzyyts	3	5
+357	40 21 4238	3	9	Rzyyts	3	5
+358	23 32 4238	2	7	Jll	4	5
+359	20 32 4238	2	7	Gjjk	3	5
+350	20 32 4238	5	4	Knlx	3	5
+351	43 32 4238	5	4	FqrRnqp	4	5
+362	46 32 4238	3	6	FqrRnqp	4	5
+363	41 32 4238	2	7	FqrRnqp	5	5
+364	23 33 4238	2	7	FqrRnqp	5	5
+365	27 33 4238	4	3	FqrRnqp	5	2
+366	21 33 4238	2	7	Rjihnsj	5	4
+367	21 33 4238	2	7	Rjihnsj	5	4
+368	34 33 4238	4	4	Kwzny	5	5
+369	31 33 4238	3	4	Kwzny	4	3
+360	43 33 4238	5	6	IKwzny	3	3
+$~Ifi~otnsji~Rj~+++++++++++++++++++++++++++++++++++++++++++++
+361	49 33 4238	3	4	Hmnhpjs	3	4
+372	26 34 4238	2	7	Stwrfq	3	5
+$~N~otnsji~xhmttq
+373	29 34 4238	2	7	Bfqszy	3	5
+374	34 34 4238	2	7	Rzyyts	3	4
+375	36 34 4238	5	4	Rzyyts	3	5
+$~bnsyjw~afhfynts
+376	31 34 4238	5	6	Rzyyts	4	4
+377	31 34 4238	3	4	Rzyyts	4	4
+378	44 34 4238	5	7	Rzyyts	4	4
+379	41 34 4238	4	6	Rzyyts	4	5
+370	52 34 4238	3	4	Rzyyts	4	5
+$~xhmttq~jcfrx
+371	29 23 4239	2	7	Stwrfq	3	5
+382	21 23 4239	2	7	Stwrfq	3	5
+383	36 23 4239	3	6	Rzyyts	3	3
+384	36 23 4239	2	7	Rzyyts	3	3
+$~jsi~tk~xhmttq~jcfrx
+385	44 23 4239	2	7	Stwrfq	3	3
+386	46 23 4239	3	6	Stwrfq	3	4
+387	49 23 4239	3	6	Lmfqbf	3	3
+388	41 23 4239	5	4	Knxm	4	4
+389	26 24 4239	5	5	Rzyyts	4	2
+380	42 24 4239	3	9	Lwfrx	3	5
+381	48 24 4239	4	6	Lwfrx	3	4
+392	27 25 4239	5	6	Ifyjx	3	4
+393	34 25 4239	5	6	Lwfrx	3	4
+394	37 25 4239	5	4	Ifyjx	4	5
+395	38 25 4239	4	4	Ifyjx	4	3
+$~Ifi~qjky
+396	48 25 4239	3	6	Stwrfq	3	2
+397	52 25 4239	5	4	Stwrfq	3	2
+$~Xyfwyji~mfwi~jcjwhnxj
+398	28 26 4239	2	7	Stwrfq	3	3
+399	20 26 4239	2	7	Stwrfq	3	2
+390	21 26 4239	2	7	Stwrfq	4	3
+391	38 26 4239	4	6	Stwrfq	3	4
+302	45 26 4239	5	6	Rzyyts	3	4
+$~jsi~tk~mfwi~jcjwhnxj
+303	25 27 4239	2	7	Stwrfq	3	5
+304	25 27 4239	2	7	Stwrfq	3	5
+305	26 27 4239	5	4	Stwrfq	3	5
+306	32 27 4239	2	7	Ifyjx	3	5
+$~jcfr~xyfwyji.~knsfq~yjwr~fy~xhmttq
+307	36 27 4239	5	4	Ifyjx	3	5
+308	31 27 4239	4	7	Hmnhpjs	3	5
+$~jcfr~jsiji.~knsfq~yjwr~fy~xhmttq
+$~afhfynts~xyfwyji
+309	46 27 4239	5	6	Stwrfq	4	4
+300	41 27 4239	2	7	Stwrfq	3	3
+301	23 28 4239	4	6	Stwrfq	3	3
+312	28 28 4239	2	7	Xbjjy	3	3
+313	21 28 4239	5	6	Stwrfq	4	3
+314	33 28 4239	4	5	Stwrfq	3	2
+315	30 28 4239	2	7	Stwrfq	3	2
+316	47 28 4239	2	7	Ytrfyt	3	2
+317	52 28 4239	5	6	Jll	3	2
+318	26 29 4239	5	6	Jll	3	2
+319	21 29 4239	2	7	Jll	3	3
+310	36 29 4239	2	7	Jll	4	5
+311	30 29 4239	3	4	Rfsltj	3	5
+422	42 29 4239	2	7	Rfsltj	3	4
+423	43 29 4239	2	7	Rfsltj	3	4
+$~wjlnxyjwji~ktw~jcfr
+424	40 29 4239	2	7	Rfsltj	5	4
+425	41 29 4239	4	6	Rfsltj	4	5
+426	41 29 4239	3	6	Rfsltj	4	5
+427	26 20 4239	5	4	Hmnhpjs	3	4
+428	20 20 4239	2	7	Stwrfq	3	5
+429	32 20 4239	5	4	Rfsltj	3	4
+420	34 20 4239	5	6	Hmnhpjs	3	4
+421	30 20 4239	5	6	Jll	3	4
+432	44 20 4239	2	7	Fuuqj	4	5
+433	45 20 4239	2	7	Hmnhpjs	4	5
+434	40 20 4239	5	6	Hmnhpjs	3	5
+435	26 21 4239	5	6	Rzyyts	3	4
+436	20 21 4239	2	7	Rzyyts	3	4
+437	32 21 4239	5	6	Fuuqj	3	4
+438	37 21 4239	3	4	Stwrfq	3	5
+439	49 21 4239	2	7	Jll	3	5
+430	40 21 4239	3	6	Jll	3	5
+431	24 32 4239	5	6	Jll	3	5
+442	24 32 4239	3	6	Jll	3	5
+443	27 32 4239	2	7	Jll	3	5
+444	36 32 4239	5	6	Jll	3	5
+445	31 32 4239	5	6	Jll	3	5
+446	40 32 4239	5	4	Stwrfq	3	5
+447	28 33 4239	3	9	Jll	3	5
+448	37 33 4239	5	4	Rzyyts	3	5

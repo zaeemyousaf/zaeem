@@ -116,7 +116,7 @@ def encodeS(string="zaeem",engI=0,symI=0,numI=0,hold=[],igPtrn=0):
 		#print(char)
 		#print(ptrnCounter)
 		#if contains(char,hold)==True or ptrnCounter!=0:
-		if hold.__contains__(char) or ptrnCounter !=0:
+		if hold.__contains__(char) or ptrnCounter ==0:
 			# if char is in hold list don't encode and simply append it.
 			# also don't encode at specific pattern 
 			encodedString+=char

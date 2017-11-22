@@ -1,0 +1,30 @@
+PakTurk A/level has Two sections in Both A1 and A2.
+A1 and A2 have further Two subsections 'A' and 'B'.
+PakTurk has some teachers to teach both Sections and subsections.
+A timetable is required to allocate timing efficiently with some rules.
+
+Facts:
+1): Sunday is off.
+2): at least 3 lectures per week.
+3): not more than 2 lectures per day.
+4): scattered lectures are always preferred.
+5): time for one lecture is 1:20
+
+#===== Necessary Input Information ===========
+1): time range for which a particular teacher is available
+2): School timinging range
+3): Subjects ordered preference wise
+
+#===== Algorithm ============
+step 1): input file will contain parameters e.g +++++++
+>>> Teachers_list = [name1,name2, ...] 
+>>> Teachers_timing=[[start_time,end_time],[start_time,end_time], ...)]
+>>> school_timing = [start_time,end_time]
+>>> time_lenght = [minutes]
+>>> Lectures_per_week = [number_of_lectures]
+
+step 2): python will generate prolog knowledge base, then prolog intepreter will access this file. ++++++++
+
+step 3): A user will make some querries and appropriate output will be generated.
+
+

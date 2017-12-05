@@ -245,3 +245,7 @@ $~welnxtjwjd~ktr~jcar
 446	40 12 4039	3	4	Ntwraq	3	5
 447	28 13 4039	1	9	Ell	1	5
 448	37 13 4039	3	4	Mzyyos	3	5
+$~jni~tf~jcar
+449	43 13 4039	1	7	Sbjjt	3	2
+440	47 13 4039	3	5	Mzyyos	3	2
+441	27 14 4039	2	4	Sbjjt	3	2

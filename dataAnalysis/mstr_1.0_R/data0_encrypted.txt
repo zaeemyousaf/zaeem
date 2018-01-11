@@ -248,10 +248,14 @@ $~welnxtjwjd~ktr~jcar
 $~jni~tf~jcar
 449	43 13 4039	1	7	Sbjjt	3	2
 440	47 13 4039	3	5	Mzyyos	3	2
-$~xtfwy tk~mni~tjwrs
+$~xtfwy tk~mni~tjwr jcfm
 441	27 14 4039	2	4	Sbjjt	3	2
 452	35 14 4039	3	6	Ntwraq	3	5
 453	38 14 4039	3	7	Sbjjt	3	0
 454	44 14 4039	0	7	Ell	1	2
 455	47 14 4039	0	7	Hfqba	3	0
+$~jni~rii~yewr~ecfr
 456	23 03 4030	0	7	Mzyyos	2	3
+457	25 03 4030	1	4	Mzyyos	2	2
+458	28 03 4030	0	7	Sbjjt	3	1
+459	33 03 4030	0	7	Sbjjt	3	2

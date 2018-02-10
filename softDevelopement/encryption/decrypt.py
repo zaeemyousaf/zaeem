@@ -143,6 +143,7 @@ def decodeF(Name):
 	# out.write("parameters\t{0}\t{1}\t{2}\t{3}\t{4}\n".format(engI,symI,numI,hold,igPtrn))
 	inp=open(Name,'r')
 	parameters=inp.readline().split('\t')
+	print(parameters)
 	if parameters[0] != "parameters":
 		print("it is not encrypted file or it does not have parameters")
 	else:
@@ -157,7 +158,7 @@ def decodeF(Name):
 		out=open(outputFileName,'w')
 		Line=inp.readline()
 		while Line!='':
-			result=encodeS(Line,engI=-1*engI,symI=-1*symI,hold=hold,igPtrn=igPtrn)['encodedString']
+			result=encodeS(Line,engI=-1*engI,numI=-1*numI,symI=-1*symI,hold=hold,igPtrn=igPtrn)['encodedString']
 			out.write(result)
 			Line=inp.readline()
 		out.close()

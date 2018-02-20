@@ -265,3 +265,6 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 571	34~32~5041	5	4	Vweet	4	4
 572	38~32~5041	3	5	Vweet	4	4
 573	40~32~5041	4	4	Qoupao	1	4
+574	42~32~5041	4	4	Hgj	1	4
+575	45~32~5041	4	4	Hgj	1	4
+576	51~32~5041	4	2	Hgj	1	6

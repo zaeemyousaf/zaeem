@@ -76,6 +76,9 @@ while Game=="Continue":
                         # remove selected cards
         else:
                 print("\n ***** At this position there is no card *******\n")
-winner=playerNames[scores.index(max(scores))]                
-print("******** Winner of the Game is {} **********\n------------------- End of Game".format(winner))
+if scores.count(max(scores)) > 1:
+	print("**************draw**************\n end of the game")
+else:
+	winner=playerNames[scores.index(max(scores))]                
+	print("******** Winner of the Game is {} **********\n------------------- End of Game".format(winner))
 

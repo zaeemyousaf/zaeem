@@ -268,3 +268,7 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 574	42~32~5041	4	4	Hgj	1	4
 575	45~32~5041	4	4	Hgj	1	4
 576	51~32~5041	4	2	Hgj	1	6
+577	54~32~5041	3	5	Hgj	1	6
+578	34~33~5041	3	5	Hgj	1	6
+579	35~33~5041	4	4	Hgj	1	6
+580	39~34~5041	6	2	Hgj	1	6

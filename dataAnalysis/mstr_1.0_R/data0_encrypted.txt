@@ -273,3 +273,10 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 579	35~33~5041	4	4	Hgj	1	6
 580	39~33~5041	6	2	Hgj	1	6
 581	50~33~5041	3	5	Puwwoq	1	6
+582	59~33~5041	3	5	Qoupao	1	6
+583	39~34~5041	4	4	Eeei	4	3
+584	41~34~5041	5	4	Dpsoe	4	6
+585	44~34~5041	4	4	Dpsoe	4	6
+586	45~34~5041	4	5	Dpsoe	4	6
+587	57~34~5041	6	4	Qoupao	2	6
+

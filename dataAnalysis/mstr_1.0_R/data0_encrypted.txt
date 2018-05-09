@@ -279,4 +279,6 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 585	44~34~5041	4	4	Dpsoe	4	6
 586	45~34~5041	4	5	Dpsoe	4	6
 587	57~34~5041	6	4	Qoupao	2	6
-
+588	35~35~5041	6	5	Dpsoe	4	6
+589	35~35~5041	5	4	Dpsoe	5	6
+590	39~35~5041	6	4	Puwwoq	2	6

@@ -301,3 +301,5 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 506	49~37~5041	3	5	Paqjo	4	3
 507	50~37~5041	3	5	Paqjo	4	3
 508	53~37~5041	4	2	Paqjo	4	3
+509	59~37~5041	4	4	Vweet	5	4
+510	32~38~5041	4	4	Qoupao	2	4

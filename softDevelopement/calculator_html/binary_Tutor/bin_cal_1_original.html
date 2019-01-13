@@ -10,19 +10,9 @@ Teacher: Sir Naghman Hameed (PakTurk)
 	sol="";
 		function simple_decimal_converter(bits){
 			// copy value stored in box into x
-			decimal_number = input.decimal_input.value;
-
-			x=decimal_number.split(".");
-			integral_part=abs(eval(x[0]));
+			x=(input.decimal_input.value).split(".");
+			integral_part=eval(x[0]);
 			frac_part=eval("."+x[1]);
-			// add sign bit to integral part
-			if (eval(decimal_number) > 0){
-				// sign bit is zero for positive
-				sign_bit="0";
-			}
-			else{
-				sign_bit="1";
-			}
 			bin_integral_part=int2bin(integral_part);
 			bits_occupied_by_int_part=bin_integral_part.length;
 			remaining_bits=eval(bits)-(bits_occupied_by_int_part);
@@ -30,31 +20,13 @@ Teacher: Sir Naghman Hameed (PakTurk)
 
 			sol+="==============================:";
 			sol+="here goes your solution"+ "</br>";
-			step_number =1;
-			if (eval(decimal_number) < 0){
-			sol+="step "+ step_number + ": Treat it as a positive number ";
-			step_number++;
-			}
-			
-			sol+="Step "+step_number+ ": Split into integral part and decimal part" + "</br>";
-			step_number++;
+			sol+="Step 1: Split into integral part and decimal part" + "</br>";
 			sol+= integral_part + " <-----> " + frac_part +"</br>";
-			sol+="Step "+step_number+"Convert integral part into binary ";
+			sol+="Step 2: Convert integral part into binary ";
 			sol+=bin_integral_part+ "<sub> 2 </sub> </br>";
-			step_number++;
-			sol+="Step "+step_number+": add sign bit";
-			step_number++;
-			bin_integral_part+="0";
-			sol+=bin_integral_part+ "<sub> 2 </sub> </br>";
-			sol+= "Step "+step_number+": Convert decimal part into binary by iterative multiplication of 2" +" <-----> "+ bin_frac_part+ "<sub> 2 </sub> </br>";
-			step_number++;
-			sol+="Step "+step_number+ ": Writing integral part and fractional part adjacent with binary point at its location "+ "</br>";
-			step_number++;
+			sol+= "Step 3: Convert decimal part into binary by iterative multiplication of 2" +" <-----> "+ bin_frac_part+ "<sub> 2 </sub> </br>";
+			sol+="Step 4: Writing integral part and fractional part adjacent with binary point at its location "+ "</br>";
 			sol+=bin_integral_part+"."+ bin_frac_part+ "<sub> 2 </sub> </br>";
-			if (eval(decimal_number) < 0){
-				sol+= "Step"+step_number+ "Convert it into 2's complement </br>";
-				step_number++;
-			}
 			sol+="===============================: ending solution"+
 			"</br>";
 
@@ -198,42 +170,6 @@ Teacher: Sir Naghman Hameed (PakTurk)
 			binary_str=(binary.join(""));
 			return(binary_str);
 		}
-		//------------------------------
-		function onesComplement(binary_str){
-			onesComp="";
-			for(i=0; i<binary_str.length; i++){
-			if (binary_str[i] =="0"){
-				bit="1";
-			}
-			else{
-				bit="0";
-			}
-			onesComp +=bit;
-
-			}
-			return(onesComp);
-		}
-		//------------------------------
-		function twosComplement(binary_str){
-			i=binary_str.length -1;
-			foundZero=false;
-			while(i >=0 && foundZero==false) {
-				if(binary_str[i]=="0"){
-					foundZero=true;
-				}
-				else{
-					binary_str=binary_str.replace(i,"0");
-				i--;
-				}
-			}
-			binary_str=binary_str.replace(i,"1")
-			return(binary_str);
-		}
-
-
-
-
-
 		//------------------------------
 		function clrScreen(){
 			document.getElementById("solution").innerHTML="";

@@ -50,6 +50,7 @@ while Game=="Continue":
                 usc=input("\n{} Out of Range, Enter {} card pos 'row1 col1 row2 col2 ...': ".format(playerNames[turnCounter%len(playerNames)],picked))
                 pos=get_cardsPos(usc,picked)
         while len(pos) != (2*picked):
+                # 2: row and col
                 usc=input("{} Enter space sep {} card pos 'row1 col1 row2 col2 ...' carefully: ".format(playerNames[turnCounter%len(playerNames)],picked))
                 pos=get_cardsPos(usc,picked)
         # users selected cards
@@ -75,7 +76,7 @@ while Game=="Continue":
                         #print("congratulation! your guess is right")
                         # remove selected cards
         else:
-                print("\n ***** At this position there is no card *******\n")
+                print("\n ***** Some Cards were already picked  *******\n")
 if scores.count(max(scores)) > 1:
 	print("**************draw**************\n end of the game")
 else:

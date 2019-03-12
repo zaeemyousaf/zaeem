@@ -337,5 +337,5 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 642	44~32~5042	5	4	Pion	5	1
 643	58~32~5042	6	2	Pion	4	0
 644	35~33~5042	3	5	Pion	4	1
-645	36~33~5042	6	2	Pion	4	0
-646	41~33~5042	6	2	Pion	4	0	
+645	36~33~5042	4	2	Pion	4	0
+646	41~33~5042	4	2	Pion	4	0	

@@ -1,0 +1,5 @@
+Definition of Mod: from a given set of values, the most repeated one is called mod.
+e.g : 1,1,1,2,2,3,3,7,7,7,7 -> mod: 7 as it repeated 4 times
+1): user enteres the number 1 by 1 until rogue value which is set '-1' for the time being
+2): user enteres samilar numbers together OR in order e.g 1,1,1,1,1,2,2,2,2,2,2,2,33,-10,-10,-10
+3): output the number which repeated most

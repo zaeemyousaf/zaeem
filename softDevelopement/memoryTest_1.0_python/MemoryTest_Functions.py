@@ -106,7 +106,7 @@ def areSame(usc):
         return True
     else:
         return False
-# print(areSame((1,1,1)))
+# print(areSame((1,1,1,1)))
 #----------------------------------
 def contains(boxArray,elements):
     ''' boxArray: array from which you are comparing

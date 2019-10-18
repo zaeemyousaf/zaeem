@@ -380,4 +380,6 @@ lqdea	gate	iqweqviwb	ueavrn	iorg	keaowh	zPuesvxre
 685	33~40~5042	4	1	Jrap	4	1
 686	33~40~5042	3	5	Jrap	4	1
 687	35~40~5042	4	2	Jrap	4	3
-
+688	37~40~5042	3	5	Jrap	4	3
+689	42~40~5042	3	5	Puwwoq	1	6
+690	48~40~5042	5	1	Pion	4	1

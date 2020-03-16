@@ -5,5 +5,5 @@ Reader HooK:
 Lead in:
 	Many people work together to assist each other
 Thesis Statement:
-	Github is very easy to use, Learn some basic commands, practics and then deploy your project
 	
+	Github is not easy to use but you can learn it very easily if you purchase some books and then practice alot.

@@ -1,2 +1,3 @@
 I am writing on master branch
-I am writing on latest branch
+keep in mind that this is master branch
+I am not talking about the latest branch

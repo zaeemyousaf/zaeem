@@ -1,3 +1,6 @@
 I am writing on master branch
 keep in mind that this is master branch
 I am not talking about the latest branch
+yes true. it is working fine by master
+I am happy to write in master branch
+

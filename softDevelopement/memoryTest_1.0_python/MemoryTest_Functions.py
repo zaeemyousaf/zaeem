@@ -133,7 +133,8 @@ def contains(boxArray,elements):
 
 #----------------------------------
 def cardsAtPos(grid,pos):
-    ''' pos=(row1,col1,row2,col2....) 
+    ''' pos=(row1,col1,row2,col2....)
+    starting index from 1
     each consective pair is position of a card grid'''
     # assumes first index =1
     cards=[]

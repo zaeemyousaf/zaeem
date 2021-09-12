@@ -1,0 +1,19 @@
+#------------- GDB
+man gdb
+b main # set break at main
+b line_number
+l # list 10 next lines
+gcc -g # to make sure that symbol table was crated
+r run # start execution
+c continue until next break
+n # one step forward
+s # step into
+
+set follow-fork-mode child	# to debug multithreading
+set follow-exec-mode new	# and multiprocessing
+
+gdb --args program arg1 arg2 	# to debug a program which takes cmd args
+set var x=10
+b 'filename.c':line_num		# breaking at line number
+b 'filename.c':line_num if(var=20) # conditional break
+until 				   # executes until reaches the next line

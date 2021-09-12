@@ -1,0 +1,97 @@
+ages <- c(23, 26, 34)
+Names <- c("Zaeem", "Zikar", "Ahsan")
+#======== names(list) <- corresponding names
+names(ages) <- Names
+
+#======== class(obj)
+class(ages)	# data types
+
+#======== library(libraryName)
+library(library_name)	# calling library
+
+#======== minimum
+min(x) # returns the minimum from a list
+which.min(x)	# returns the index of min
+which.max(x)	# returns the index of max
+
+#======== sort & order
+sort(unorderedList)	# sorts the unordered list
+order(unorderedList)	# returns the list of indexes used to sort
+e.g
+> lst = c(3,2,1)
+> sort(lst)
+> lst
+1,2,2
+> lst = c(3,2,1) 
+> indices = order(lst)
+> indices
+3,2,1
+> lst[indices]
+1,2,3
+++++++++++++++++ rank
+> rank(lst)	# returns a list of indices of smallest to greatest
+#======== data.frame
+my_df <- data.frame(header=NameOfHeader, ...)	# creating dataframe
+my_df <- cbind(my_df,c(...new..data))	# adding another column
+
+e.g
+> x = c(3,2,1)
+> y = c(8,1,7)
+> my_df = data.frame(x=x,y=y)
+> z = c(9,1,2)
+> my_df <- cbind(my_df, z)
+
+++++++++++++++++++++ sorting data.frame
+# store 'order' of specific column
+# stored 'order' can be applied to sort
+
+
+#========== is.na
+# returns true for NA value
+> lst = c(FALSE,TRUE,FALSE)
+> is.na(lst)
+1,3
+
+#========== which
+# returns the index of an elment which is true
+> lst = c(TRUE,FALSE,TRUE,TRUE)
+> which(lst)
+1,3,4
+++++++++++++ match
+# returns the index of matching element
+match(c(sub_list),c(supper_list))
+
+#========== %in%
+returns the list of boolean
+> x <- c("a","b","c","d","e")
+> y <- c("a","d","f")
+> y %in% x
+> [TRUE,TRUE,FALSE]
+
+#========= dplyr package
+mutate(dataframe,new_column) # like cbind
+new_dataframe= select(dataframe,column1,column2)
+filter(dataframe, column_name < x)
+# %>% is a pipe symbole like in linux: |
+dataframe %>% select(column1,column2 ...) %>% filter(column3 < x)
+
+#========
+ifelse(a>0 a^2 NA)
+
+#========= any & all
+any(logical_list)	# returns true if atleast one element is true
+all(logical_list)	# returns true if all entries are true
+> x <- c(TRUE, FALSE,FALSE)
+> any(x)	# returns TRUE
+> all(x)	# return FALSE
+
+
+
+
+
+
+
+
+
+
+

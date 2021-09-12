@@ -1,0 +1,8 @@
+
+mysql -p		# enter your password
+show databases; 	# list all databases
+create database name;
+use name;
+show tables;		# list all tables in selected database
+drop database db;	# delete db
+describe tableName;	# to see the schema

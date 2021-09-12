@@ -1,0 +1,16 @@
+https://freenode.net/kb/answer/registration // link for reference
+https://www.emacswiki.org/emacs/ErcCommands
+
+# erc(irc) is run emacs
+>> steps to configure it
+1: run emacs
+2: M-x erc RET
+3: keep on pressing RET if you want to join #emacs group
+4: /nick nickname  // to change your nickname
+5: /HELP // for help
+>> ways to register your username so that you can talk privately with someone
+/msg NickServ REGISTER YourPassword youremail@example.com // courtesy to web
+
+/JOIN #channel-name
+/PART // to leave the current channel
+/QUIT msg // leave a message and leave the channel

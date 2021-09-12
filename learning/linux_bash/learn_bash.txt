@@ -1,0 +1,85 @@
+#---------------1
+1): echo "hello,World!"
+2): # it is single line comment
+3): echo --help				# for more information
+#---------------2
+1): varName=Value
+2): echo $varName			# use $ to get value
+#---------------3
+1): eval				# to evaluate
+1): $[$var]				# to evaluate expression e.g 3+5
+	var1=35
+	var2=90
+	echo $[$var1+$var2]	# yeilds ans
+#---------------4
+1): read -p varName			# value from keyboard with prompt 
+2): read -t timeOut varName		# input with in timeOut
+3): help(read)				# for more information
+
+#---------------5
+1): {1..10}				# generate list 1,2,3,4...10
+2): {start..stop..increment}		# create list with increment
+3): {A..F}				# create list A,B,C,D,E,F
+4): {a..c}				# create list a,b,c
+5): {a..c..incremnet}			# list with increment
+6): a{1,2,3}b				# a1b,a2b,a3b
+7): {a,b}{1,2}				# a1,a2,b1,b2 
+#---------------6
+1): : << 'commentName' 			# block comment starts
+command1;				# body of comment
+command2;
+bla bla...
+commentName				# end of comment 
+
+#---------------7
+1): cat << optNames			# start of block to print
+options1
+options2
+options...
+bla bla
+....
+optNames				# end of block with name
+
+#---------------8
+1): function fNames {
+	scriptItSelf=$0;
+	arg1=$1;
+	arg2=$2;
+	argN=$N;
+	....
+	echo $arg1
+	....
+	}
+# single line function
+2): function fName { echo $1; echo $2; operation $N }
+3): fName arg1 arg2 argN		# arguments separated by spaces
+#---------------9
+1): #!/bin/bash				# hashBang/ sheBang
+
+#--------------10
+note: array is zero based
+1): declare -a ArrayName		# explicitly declaring array
+2): ArrayName[index]=Value		# storing value at index
+3): ${ArrayName[index]}			# to access value at index
+4): ${ArrayName[*]}			# list all elements of array
+	
+	declare -a A
+	A[0]=first
+	A[1]=second
+	A[n]=foo
+	A[n+1]=bar
+	# shell start-------------------
+	:~$ echo ${A[*]}
+	first second foo bar
+	:~$ echo ${A[0]}
+	first
+	# shell end -------------------
+5): ArrayName[index]=NewValue		# overwrites without prompt
+6): ${#ArrayName[*]}			# to calculate the length of array
+
+#--------------11
+1): value > fileName.extension		# creats new file and saves value into a file.ext
+2): value >> fileName.extension		# appends if file is already available
+#--------------12
+1): man [				# manual of 'test operator' and 'file test operator'
+#------------

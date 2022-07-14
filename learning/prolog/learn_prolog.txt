@@ -1,0 +1,4 @@
+?- [db].       # to load db file in interpreter
+?- consult('filename.pl'). # to load filename in interpreter
+?- halt.                   # to exit the program
+

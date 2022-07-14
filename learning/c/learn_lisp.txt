@@ -1,0 +1,162 @@
+terpri	# for empty line
+--
+(defun funName(arg1 arg2)
+(return-from funcName (+ arg1 arg2))
+)
+--
+(write "hello")
+(write 20)
+--
+(print "hi")
+-- for loop iteration
+(setq a 10)
+(loop 
+   (setq a (+ a 1))
+   (write a)
+   (terpri)
+      (when (> a 17) (return a))
+)
+--
+(loop for x in '(tom dick harry)
+   do (format t " ~s" x)
+)
+--
+(loop for a from 10 to 20
+   do (print a)
+)
+--
+(loop for x from 1 to 20
+   if(evenp x)
+   do (print x)
+)
+--
+(loop repeat 10
+do
+(here are you instructions))
+(loop for x from 1 to 20
+   if(evenp x)
+   do (print x)
+)
+--
+(dolist (n '(1 2 3 4 5 6 7 8 9))
+   (format t "~% Number: ~d Square: ~d" n (* n n))
+)
+-- if, condition
+(setq a 10)
+(if (> a 20)
+   (format t "~% a is less than 20"))
+(format t "~% value of a is ~d " a)
+--
+(setq a 100)
+(when (> a 20)
+   (format t "~% a is greater than 20"))
+(format t "~% value of a is ~d " a)
+-- case, if
+(setq a 100)
+(when (> a 20)
+   (format t "~% a is greater than 20"))
+(format t "~% value of a is ~d " a)
+--
+(setq a 10)
+(cond ((> a 20)
+   (format t "~% a is greater than 20"))
+   (t (format t "~% value of a is ~d " a)))
+-- cout
+(setq a 10)
+(cond ((> a 20)
+   (format t "~% a is greater than 20"))
+   (t (format t "~% value of a is ~d " a)))
+--
+(print (type-of x))
+--
+(defmacro setTo10(num)
+(setq num 10)(print num))
+(setq x 25)
+(print x)
+(setTo10 x)
+-- global variables
+it only sets the value of variable is not already defined
+(defvar x 234)
+(write x)
+-- changing the value of x
+(setq x 10)
+--
+(defconstant PI 3.141592)
+--
+(incf x value) # x = x + value
+--
+(decf x value) # x = x - value
+--
+(and x y)
+(or x y)
+(not x)
+--
+(min a b)
+(max a b)
+-- predicates (https://www.tutorialspoint.com/lisp/lisp_predicates.htm)
+evenp
+--
+greaterp
+--
+(write ( + #c( 1 2) #c( 3 -4))) complex number
+-- character #\
+(write 'a)
+(terpri)
+(write #\a)
+(terpri)
+(write-char #\a)
+(terpri)
+(write-char 'a)
+-- special character
+#\Backspace
+#\Tab
+#\Linefeed
+#\Page
+#\Return
+#\Rubout
+--
+(write (char= #\a #\b))
+--arrays in lisp
+(write (setf my-array (make-array '(10))))
+(terpri)
+(setf (aref my-array 0) 25)
+(setf (aref my-array 1) 23)
+(setf (aref my-array 2) 45)
+(setf (aref my-array 3) 10)
+(setf (aref my-array 4) 20)
+(setf (aref my-array 5) 17)
+(setf (aref my-array 6) 25)
+(setf (aref my-array 7) 19)
+(setf (aref my-array 8) 67)
+(setf (aref my-array 9) 30)
+(write my-array)
+-- 3x3 array
+(setf x (make-array '(3 3) 
+   :initial-contents '((0 1 2 ) (3 4 5) (6 7 8)))
+)
+(write x)
+-- setf is supper set of setq
+it can set value of any type but
+setq only sets the value of symbol
+--predicates
+string=
+char=
+char/=
+string-equal
+--
+(write (count 7 '(1 5 6 7 8 9 2 7 3 4 5)))
+--
+(write (delete 5 '(1 5 6 7 8 9 2 7 3 4 5)))
+--
+(write (merge 'vector #(1 3 5) #(2 4 6) #'<))
+--
+(setf (get 'annie 'age) 43)
+(setf (get 'annie 'job) 'accountant)
+(setf (get 'annie 'sex) 'female)
+(setf (get 'annie 'children) 3)
+
+(terpri)
+(write (symbol-plist 'annie))
+-- used to test if that is list
+(ENDP L)
+(NULL L)

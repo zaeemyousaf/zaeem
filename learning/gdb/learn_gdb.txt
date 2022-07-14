@@ -17,3 +17,5 @@ set var x=10
 b 'filename.c':line_num		# breaking at line number
 b 'filename.c':line_num if(var=20) # conditional break
 until 				   # executes until reaches the next line
+f finish			   # like until
+run cmdline_arg_list		   # after loading program, give args

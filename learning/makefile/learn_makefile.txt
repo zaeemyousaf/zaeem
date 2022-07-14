@@ -1,0 +1,39 @@
+.PHONY target # target is not a file output. rather it is a name of rule
+for instance
+.PHONY clean # clean is not a name of a file, rather it just triggers action
+.PHONY always runs as it has no dependency
+
+#=================
+main.o: main.c
+	gcc -c main.c -o main.o
+can be done this
+------------------
+main.o: main.c
+	gcc -c $< -o $@
+hence $@ is used for rule name and $< is used for target variable
+#=================
+main: main.o lib.o
+      gcc -o main main.o lib.o
+can be done this way
+------------------
+main: main.o lib.o
+      gcc -o $@ $^
+hence $^ is a list of prerequisite ( main.o lib.o)
+#=================
+main: main.o lib.o
+      gcc -o main main.o lib.o
+
+main.o: main.c	  
+	gcc -c main.c -o main.o
+
+lib.o: lib.c	  
+	gcc -c lib.c -o lib.o
+
+can be done this
+------------------
+main: main.o lib.o
+      gcc -o main $^
+
+%.o: %.c
+      gcc -c $< -o $@
+#=================

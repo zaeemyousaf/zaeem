@@ -1,39 +1,55 @@
-# learn_linux
+#!/bin/bash
 function learn(){
-    # if arg=linux open linux
-    if [[ $1 == "linux" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/linux_bash/learn_linux.txt
-    elif [[ $1 == "bash" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/linux_bash/learn_bash.txt
-    elif [[ $1 == "git" ]]; then
-	emacs -nw /home/zaeem/git/learn-github/git_commands.txt
-    elif [[ $1 == "emacs" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/emacs/learn_emacs/basics.el
-    elif [[ $1 == "gdb" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/gdb/learn_gdb.txt    	
-    elif [[ $1 == "valgrind" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/valgrind/learn_valgrind.txt
-    elif [[ $1 == "c" ]]; then
-	emacs -nw /home/zaeem/git/zaeem/learning/c/learn_c.txt	
-    elif [[ $1 == "create" ]]; then
-	# check if file does not already exists
-	if [[ ! -f $2 ]]; then
-	    touch $2
-	    echo "please update .bashrc"
-	else
-	    echo "file is already there"
-	fi
-    elif [[ $1 == "-h" ]]; then
-	# print help
-	echo "learn linux"
-	echo "learn bash"
-	echo "learn git"
-	echo "learn emacs"
-	echo "learn create path/file"
-	echo "learn gdb"
-	echo "valgrind"
-	echo "c"
+    if [[ $1 == "learn" ]]; then
+        if [[ -f /home/zaeem/git/zaeem/learning/$2/learn_$2.txt ]]; then            
+            emacs -nw /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
+        fi
+        
+    elif [[ $1 == "create" ]]; then        
+        mkdir /home/zaeem/git/zaeem/learning/$2
+        touch /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
+        emacs -nw /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
+        
+    elif [[ $1 == "delete" ]]; then
+        sudo rm -ir /home/zaeem/git/zaeem/learning/$2
+    elif [[ $1 == "help" ]]; then
+        echo "=======Available commands=========="
+        for dir in $(ls /home/zaeem/git/zaeem/learning); do
+            echo "learn [cd] $dir"
+        done
+        echo "======================="
+        echo "to create new notes 'learn -c notesname'"
+        echo "to delete notes 'learn -d notesname'"
+        echo "to edit notes 'learn notesname'"
+    else
+        echo "$1 is nto handled yet"
     fi
 }
 
-learn $*
+if [[ $# -gt 0 ]]; then
+    while getopts ":c:d:e" o; do
+        case "${o}" in
+            c)
+                # create a newnotes
+                dir=${OPTARG}
+                learn create $dir
+                ;;
+            d)
+                dir=${OPTARG}
+                learn delete $dir
+                ;;
+            e)
+                emacs -nw /home/zaeem/git/zaeem/learning/learn
+                ;;
+            *)
+                learn help
+                ;;
+        esac    
+    done
+    shift $((OPTIND-1))
+    if [[ $# -gt 0 ]]; then
+        learn learn $@
+    fi    
+else
+    learn help
+fi

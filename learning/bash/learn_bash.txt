@@ -82,4 +82,7 @@ note: array is zero based
 2): value >> fileName.extension		# appends if file is already available
 #--------------12
 1): man [				# manual of 'test operator' and 'file test operator'
-#------------
+#--------------13
+1): if [[ $x =~ regular-expression ]] # to compare reg-exe to left side
+e.g
+if [[ $x =~ ^[0-9]+$ ]] # makes sure that x is int which has only ints

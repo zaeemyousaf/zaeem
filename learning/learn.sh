@@ -3,12 +3,21 @@ function learn(){
     if [[ $1 == "learn" ]]; then
         if [[ -f /home/zaeem/git/zaeem/learning/$2/learn_$2.txt ]]; then            
             emacs -nw /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
+        else
+            echo "no such notes"
+            echo "type 'learn -c $2' to create new notes"
         fi
         
     elif [[ $1 == "create" ]]; then        
         mkdir /home/zaeem/git/zaeem/learning/$2
         touch /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
         emacs -nw /home/zaeem/git/zaeem/learning/$2/learn_$2.txt
+    elif [[ $1 == "update" ]]; then
+        # it will create a softlink
+        # copy softlink to /usr/bin/
+        rm -rf /home/zaeem/git/zaeem/learning/learn
+        ln -s /home/zaeem/git/zaeem/learning/learn.sh /home/zaeem/git/zaeem/learning/learn
+        sudo mv -f /home/zaeem/git/zaeem/learning/learn /usr/bin//learn
         
     elif [[ $1 == "delete" ]]; then
         sudo rm -ir /home/zaeem/git/zaeem/learning/$2
@@ -18,16 +27,18 @@ function learn(){
             echo "learn [cd] $dir"
         done
         echo "======================="
-        echo "to create new notes 'learn -c notesname'"
-        echo "to delete notes 'learn -d notesname'"
-        echo "to edit notes 'learn notesname'"
+        echo "-e: to edit learn.sh' and update it"
+        echo "-c: to create new notes 'learn -c notesname'"
+        echo "-d: to delete notes 'learn -d notesname'"
+        echo "to edit 'learn notesname'"        
+        echo "-u: to update and copy to /usr/bin/"
     else
         echo "$1 is nto handled yet"
     fi
 }
 
 if [[ $# -gt 0 ]]; then
-    while getopts ":c:d:e" o; do
+    while getopts ":c:d:eu" o; do
         case "${o}" in
             c)
                 # create a newnotes
@@ -39,7 +50,12 @@ if [[ $# -gt 0 ]]; then
                 learn delete $dir
                 ;;
             e)
-                emacs -nw /home/zaeem/git/zaeem/learning/learn
+                emacs -nw /home/zaeem/git/zaeem/learning/learn.sh
+                learn update
+                ;;
+            u)
+                learn update
+                # copy softlink to /usr/bin
                 ;;
             *)
                 learn help

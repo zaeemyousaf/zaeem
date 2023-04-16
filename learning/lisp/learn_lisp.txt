@@ -1,0 +1,384 @@
+macro: syntactic extension: if you want to extend the syntax of a language, define new macro
+
+c-M-k # to delete the s-exe when cursor is on the opening parenthesis
+C-M-q # to indent all code below the cursor
+M-x check-parens
+M-; # jump to comment place
+C-c ; # comment out particular s-exp
+
+http://clhs.lisp.se/Body/f_reduce.htm#:~:text=reduce%20uses%20a%20binary%20operation,able%20to%20accept%20no%20arguments.
+(setf a 10)
+(setf b 20)
+(setf c 30)
+(setf lst '(2 3))
+(print `(,a ,b ,c a b c ,@lst lst ,lst ',lst)) ;; '(10 20 30 a b c 2 3 lst '(2 3))
+
+(defmacro myloop(start end &body body)
+  `(loop for x from ,start to ,end
+         do
+         ,@body))
+(macroexpand (myloop 10 20 (print "hello")))
+
+;; , is used to evaluate
+;; ,@ is used to replace elements of body instead of list
+
+ (setq tester (copy-seq "lkjashd")) =>  "lkjashd"
+ (sort tester #'char-lessp) =>  "adhjkls"
+ (setq tester (list '(1 2 3) '(4 5 6) '(7 8 9))) =>  ((1 2 3) (4 5 6) (7 8 9))
+ (sort tester #'> :key #'car)  =>  ((7 8 9) (4 5 6) (1 2 3)) 
+ (setq tester (list 1 2 3 4 5 6 7 8 9 0)) =>  (1 2 3 4 5 6 7 8 9 0)
+ (stable-sort tester #'(lambda (x y) (and (oddp x) (evenp y))))
+=>  (1 3 5 7 9 2 4 6 8 0)
+ (sort (setq committee-data
+             (vector (list (list "JonL" "White") "Iteration")
+                     (list (list "Dick" "Waters") "Iteration")
+                     (list (list "Dick" "Gabriel") "Objects")
+                     (list (list "Kent" "Pitman") "Conditions")
+                     (list (list "Gregor" "Kiczales") "Objects")
+                     (list (list "David" "Moon") "Objects")
+                     (list (list "Kathy" "Chapman") "Editorial")
+                     (list (list "Larry" "Masinter") "Cleanup")
+                     (list (list "Sandra" "Loosemore") "Compiler")))
+       #'string-lessp :key #'cadar)
+=>  #((("Kathy" "Chapman") "Editorial")
+     (("Dick" "Gabriel") "Objects")
+     (("Gregor" "Kiczales") "Objects")
+     (("Sandra" "Loosemore") "Compiler")
+     (("Larry" "Masinter") "Cleanup")
+     (("David" "Moon") "Objects")
+     (("Kent" "Pitman") "Conditions")
+     (("Dick" "Waters") "Iteration")
+     (("JonL" "White") "Iteration"))
+ ;; Note that individual alphabetical order within `committees'
+ ;; is preserved.
+ (setq committee-data 
+       (stable-sort committee-data #'string-lessp :key #'cadr))
+=>  #((("Larry" "Masinter") "Cleanup")
+     (("Sandra" "Loosemore") "Compiler")
+     (("Kent" "Pitman") "Conditions")
+     (("Kathy" "Chapman") "Editorial")
+     (("Dick" "Waters") "Iteration")
+     (("JonL" "White") "Iteration")
+     (("Dick" "Gabriel") "Objects")
+     (("Gregor" "Kiczales") "Objects")
+     (("David" "Moon") "Objects"))
+
+;;; reduce
+ (reduce #'* '(1 2 3 4 5)) =>  120
+ (reduce #'append '((1) (2)) :initial-value '(i n i t)) =>  (I N I T 1 2)
+ (reduce #'append '((1) (2)) :from-end t                  
+                             :initial-value '(i n i t)) =>  (1 2 I N I T) 
+ (reduce #'- '(1 2 3 4)) ==  (- (- (- 1 2) 3) 4) =>  -8
+ (reduce #'- '(1 2 3 4) :from-end t)    ;Alternating sum.
+==  (- 1 (- 2 (- 3 4))) =>  -2
+ (reduce #'+ '()) =>  0
+ (reduce #'+ '(3)) =>  3
+ (reduce #'+ '(foo)) =>  FOO
+ (reduce #'list '(1 2 3 4)) =>  (((1 2) 3) 4)
+ (reduce #'list '(1 2 3 4) :from-end t) =>  (1 (2 (3 4)))
+ (reduce #'list '(1 2 3 4) :initial-value 'foo) =>  ((((foo 1) 2) 3) 4)
+ (reduce #'list '(1 2 3 4)
+        :from-end t :initial-value 'foo) =>  (1 (2 (3 (4 foo))))
+
+;; trace command is very vital
+;; 1: set which func to tract
+;; 2: then call that function
+(trace func-name)
+(func-name)
+;;(step (func-name)) # running step by step
+step # step into 
+list-locals
+source
+print
+(untrace function-name)
+;; running script in sbcl
+sbcl --script filename.lisp
+or
+sbcl --load filename.lisp
+
+;; lexical variable in lisp are local variables
+(let ((x 0)) (defun my-inc() (incf x)))
+
+;; lexical binding
+local variables are preferred over global
+lisp always prefer to pick the local variable over the global
+
+;; delete, remove or unbind a variable, function etc
+(makunbound 'symbol)
+
+;; treating list as stack
+(push 1 '()) ;; '(1)
+(pop '(2 3 4)) ;; 2
+
+;; look at machine code of a function
+(disassemble 'function-name)
+
+;; compile-file is used to make a file into binary but machine dependent
+(compile-file "path/file.lisp")
+
+;; named parameters using key
+;; it is usefull when order does not matter
+(defun print-10(&key start end)
+       (loop for i from start to end do (print i)))
+(print-10 :end 20 :start 10)
+(print-10 :start 10 :end 20)
+
+;; &rest is used to take optional arguments
+(defun add(x y &rest lst)
+       (+ x y (reduce #'+ lst)))
+       
+;; cond macro
+(cond
+((> x 0) (action1))
+((< x 0) (action2))
+)
+
+;; while condition works in for loop
+(loop for i = 0
+      while (< i 5) do
+      (body))
+
+(let ((x 0))
+(loop while (< x 5) do
+(print x)
+(setq x (1+ x))))
+
+(loop for x from 10 while (< x 20) do
+(print x)
+(incf x))
+
+;; loop expects next token as type of loop e.g for or while
+;; for expects next token as a variable
+;; while expects next token as condition
+;; do expects next rest as a body
+;; from expects starting point
+;; to expects end point
+
+(loop for i from 0 to 10 do
+(loop for j from 0 to 10 do
+(format t "~A~A" (+ i j) #\tab))
+(format t "~%"))
+
+(loop for i from 0 to 10   
+for j from 10 to 20
+while (< (+ i j) 20) do
+(print (+ i j)))
+
+;; class concept in lisp
+(let ((x 0)) # members
+     (defun up_x() (incf x))
+     (defun down_x() (decf x)))
+     
+(defun give-me-code(command &rest arguments)
+  `(,command ,@arguments))
+(print (macroexpand (give-me-code 'print 1 2)))
+==> (PRINT 1 2)
+
+remainder, modulus
+(rem 10 3) ==> 1
+
+let vs let*
+imagine we do following in c
+a = 10
+b = 2*a
+c = 3*b
+
+(let ((a 10) (b (* 2 a)) (c (* 3 b)))
+     ;; is not correct because init-form of b will be evaluated
+     ;; then a is not found even "a" is already defined
+     ....      
+     )
+to achieve above functionality
+(let* ((a 10) (b (* 2 a)) (c (* 3 b)))     
+     ....      
+     )
+
+(defstruct book 
+   title 
+   author 
+   subject 
+   book-id 
+)
+
+( setq book1 (make-book :title "C Programming"
+   :author "Nuha Ali" 
+   :subject "C-Programming Tutorial"
+   :book-id "478")
+)
+
+(values 1 2 3)
+ ==>
+ 1 ;
+ 2 ;
+ 3
+
+(floor 10 3)
+3 ;
+1
+where first is quotient and second is remainder
+(values (floor 10 3)) ;; will return quotient
+(values (floor 10 3)) ;; will return quotient
+
+----------- in c++
+person.age = 10
+person.name = "name"
+person.height = 10.5
+print(person)
+
+(setf (get 'person 'age) 10)
+(setf (get 'person 'name) "name")
+(setf (get 'person 'height) 10.5)
+(symbol-plist 'person)
+(age 10 name "name" height 10.5)
+
+(nth-value 1 (floor 10 3)) ;; will access the second value
+
+(make-package :tom)
+(make-package :dick)
+(make-package :harry)
+(in-package tom)
+(defun hello () 
+   (write-line "Hello! This is Tom's Tutorials Point")
+)
+
+(hello)
+(in-package dick)
+(defun hello () 
+   (write-line "Hello! This is Dick's Tutorials Point")
+)
+
+(hello)
+(in-package harry)
+(defun hello () 
+   (write-line "Hello! This is Harry's Tutorials Point")
+)
+
+(hello)
+(in-package tom)
+(hello)
+(in-package dick)
+(hello)
+(in-package harry)
+(hello)
+
+(do) is parallel like (let)
+(do*) is sequential like (let*)
+
+(do
+    ;; init value of variable and increment
+    ((x 0 (1+ x))
+     (y x (1+ y)));; end of var
+    ;; return on condition
+    ((= x 10) return-value)
+  ;; body
+  (stateme1)
+  (stateme2)
+  );; end
+
+(defun new-rec (&optional (l 0) (w 0))
+  (let ((length l) (width w))
+    (flet ((area () (* length width))
+           (peri () (* 2 (+ length width)))
+           (dim () (list length width)))
+    (lambda (fun)
+      (cond
+       ((equalp fun 'area) (area))
+       ((equalp fun 'peri) (peri))
+       ((equalp fun 'dim) (dim))
+       (t (format t "~A not handled" fun)))))))
+
+(defvar *rec1* (new-rec 10 20))
+(defvar *rec2* (new-rec 2 2))
+(print (funcall *rec1* 'area))
+(print (funcall *rec1* 'peri))
+(print (funcall *rec1* 'dim))
+
+(print (funcall *rec2* 'area))
+(print (funcall *rec2* 'peri))
+(print (funcall *rec2* 'dim))
+
+(cons 1 2) ==> (1 . 2)
+(list (cons 1 2)) ==> ((1 . 2))
+(pairlis '(1) '(2)) ==> ((1 . 2))
+
+(let ((database nil))
+  (defun add (k v)
+              ;; add key value to database
+              (push (cons k v) database)
+              database)
+ (defun db-print () (print database))
+         
+                 ;; remove an element which has a key = k
+                 ;; left shifting
+                                  
+ )
+(db-print)
+(add 2 3)
+(db-print)
+(add 1 1)
+(add 3 9)
+(add 7 49)
+(db-print)
+
+
+> (defmethod add ((a number) (b number))
+(+ a b))
+ADD
+> (defmethod add ((a list) (b list))
+(append a b))
+ADD
+> (add 3 4)
+7
+> (add '(a b) '(c d))
+(A B C D)
+
+The defmethod function is like defun , except that it allows us to write multiple
+functions with the same name. When using defmethod , we can explicitly state
+the type of each parameter in the function’s argument list so that Lisp can
+use these type declarations to figure out the correct version of add for each
+situation.
+
+(maplist #'print '(1 2 3))
+
+(1 2 3) 
+(2 3) 
+(3) 
+((1 2 3) (2 3) (3))
+
+mapcan and mapcon are like mapcar and maplist, respectively, except that they combine the results of the function using nconc instead of list. That is,
+
+(mapcon f x1 ... xn) 
+   == (apply #'nconc (maplist f x1 ... xn))
+and similarly for the relationship between mapcan and mapcar. Conceptually, these functions allow the mapped function to return a variable number of items to be put into the output list. This is particularly useful for effectively returning zero or one item:
+
+(mapcan #'(lambda (x) (and (numberp x) (list x))) 
+        '(a 1 b c 3 4 d 5)) 
+   => (1 3 4 5)
+
+(char string index) ;; returns the char at index from the string
+(string char) ;; converts to string from char
+(string-char-p char) ;; predicate if it is a char
+
+(let ((animal-noises '((dog . woof)
+(cat . meow))))
+(with-open-file (my-stream "animal-noises.txt" :direction :output)
+(print animal-noises my-stream)))
+
+(with-open-file (my-stream "animal-noises.txt" :direction :input)
+(read my-stream))
+
+(with-open-file (my-stream "data.txt" :direction :output :if-exists :error)
+(print "my data" my-stream))
+
+(with-open-file (my-stream "data.txt" :direction :output
+:if-exists :supersede)
+(print "my data" my-stream))
+
+(defmacro f (arg1 &body body)
+  (format t "arg1: ~A~%" arg1)
+  (format t "body: ~A~%" body)
+  `(progn ,@body)
+;; push is a macro because it has power to change the list that is passed
+;; it is only possible by macro which runs the code setq on our behalf
+;; (macroexpand '(push 1 lst)) ;; does not evaluate rather shows the command which it runs underhood
+;; (macroexpand (push 1 lst)) ;; evaluates

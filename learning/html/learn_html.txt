@@ -1,0 +1,2 @@
+1: exit pop up (the popup when user want to leave web in uncertain situation)
+2: sidebar menu which appears from either side

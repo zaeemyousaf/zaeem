@@ -1,0 +1,17 @@
+attributes{
+    font-size: 20px;
+    background-color: red;
+    color: green;
+    top: 10px; // padding from top
+    position: relative or absolute;
+}
+.class {}
+#paragraph {}
+div[id="div-name"]{}
+
+p::after
+M-x css-lookup-symbol # to list help regarding any symbol
+
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.

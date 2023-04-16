@@ -1,1 +1,9 @@
-this is R file
+source("rscript.R") # loading r script to workspace
+# remove negative values from dataframe
+dataframe[dataframe < 0 ] = NA # first convert negative to nil
+dataframe = na.omit(dataframe)  # then omit them
+
+colnames(dataframe)
+
+
+

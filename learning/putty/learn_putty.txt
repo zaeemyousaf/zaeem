@@ -1,0 +1,3 @@
+add repo universe
+sudo apt install putty
+add url and press open

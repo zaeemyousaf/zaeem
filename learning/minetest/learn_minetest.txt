@@ -1,0 +1,3 @@
+https://wiki.minetest.net/Server_commands
+/grantme all
+/revokeme all # get away everthing

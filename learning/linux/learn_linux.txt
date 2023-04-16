@@ -199,3 +199,12 @@ http://czegel.com/sheridan/syst13416/lectures/Lecture4.html useful link
 :~$ for i in {1..100000}; do echo -ne "\r$i"; done # prints on same line
 :~$ for i in *.png; do eog $i & sleep 2  && pkill -9 eog; done # show all images with a delay of two sec
 :~$ pdfgrep # works same as grep for pdf
+:~$ filepath=$1 # $1 is first command line argument
+:~$ filename=$(basename "$filepath")
+:~$ input_image=${filename%.*}
+:~$ image_extension=${filename##*.}
+:~$ /var/cache/apt/archives$ # folder to install packages
+:~$ ffprobe -v quiet -print_format json -show_format -show_streams video.mp4 # to print detail of video
+:~$ ls -t # list in sorted by date, latest to oldest
+:~$ gpg --output delivery.gpg --encrypt --recipient zaeem toEncrypt.zip 
+:~$ find Ecommerce-App/ -type f -exec sed -i 's/old/new/g' {} \; # is used to replace old with new

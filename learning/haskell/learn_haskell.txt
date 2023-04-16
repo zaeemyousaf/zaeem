@@ -1,0 +1,6 @@
+to install: sudo apt-get install haskell-platform
+to run: ghci
+:quit # to quit
+Mvar # mutable locations that can be shared
+# actions on Mvar are atomic
+

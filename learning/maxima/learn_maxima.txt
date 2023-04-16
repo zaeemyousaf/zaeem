@@ -1,0 +1,2 @@
+load("./prog.lisp");
+:lisp (function valu); # to evaluate lisp function

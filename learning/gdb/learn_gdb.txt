@@ -19,3 +19,19 @@ b 'filename.c':line_num if(var=20) # conditional break
 until 				   # executes until reaches the next line
 f finish			   # like until
 run cmdline_arg_list		   # after loading program, give args
+# print binary value
+p /t variable
+# clear breakpoints
+clear function
+clear linenumber
+clear linenumber:linenumber
+delete breakpoints 1-6 # will remove all break points with in range
+# to list all breakpoint
+info break
+
+# printing fields of struct
+ptype /o struct
+
+float fx = 10.5; in c and let us print
+floating point representation in gdb
+p /t *(int32_t *)&fx

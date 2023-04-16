@@ -1,0 +1,4 @@
+if lock failed then run command in parent folder
+     find ~/.gradle -type f -name "*.lock" -delete
+alt+enter to import a class
+ctrl + space to view the type of parameters etc its shape

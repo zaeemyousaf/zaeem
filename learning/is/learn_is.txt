@@ -1,0 +1,12 @@
+ssl/tls
+SSL stands for Secure Socket Layer while TLS stands for Transport Layer Security. Both Secure Socket Layer and Transport Layer Security are the protocols used to provide security between web browsers and web servers.
+
+ssl handshake
+The SSL or TLS handshake enables the SSL or TLS client and server to establish the secret keys with which they communicate. 
+
+What is 3 way SSL handshake?
+A suite contains three different algorithms: The key exchange and authentication algorithm used during the handshake. The encryption algorithm used to encipher the data. The MAC (Message Authentication Code) algorithm, used to generate the message digest.
+
+What are the 4 stages of SSL?
+Handshake Protocol divided into 4 phases:
+Establish Security Capabilities. Server Authentication and key Exchange. Client Authentication and key Exchange. Change CipherSpec and Finish.

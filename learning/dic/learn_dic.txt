@@ -1,0 +1,2 @@
+# word: meaning; sentence1; sentence2 newline
+procrastination: the action of delaying or postponing something.

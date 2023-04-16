@@ -1,0 +1,2 @@
+# will crop from -ss to -t
+ffmpeg -i input.mp4 -ss 00:00:00 -t 00:03:44 -c:v copy -c:a copy output1.mp4

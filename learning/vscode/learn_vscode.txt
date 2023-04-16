@@ -1,0 +1,1 @@
+ctrl + shift + i (select all and press the key combination to auto corect indentation

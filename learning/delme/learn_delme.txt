@@ -1,0 +1,9 @@
+blocking phishing at application level
+using security toolbars
+IE8 has a phishing filter that prevents user from interaction with phishing sites
+Two factor authentication on server side
+
+Pass pet system in 2006 which displays the green icon on tool bar after accessing legitmate website. it employed EV(extended validation certificate).
+
+phishtank dataset
+apwg maintains archive using 27 characteristics of phishing

@@ -1,0 +1,16 @@
+exit ctrl x ctrl s ctrl x ctrl c
+object -> set origin -> set origin to 3d cursor
+ctrl + 2 -> subdivide (object mode)
+ctrl + r -> loopcut in (edit mode)
+
+set bone visible (select bone -> object data properties -> viewpoint display -> infront
+alt + r -> remove all rotations
+
+bone -> extrude (select pose mode, now child will move with parent) 
+->go object mode get a plane and cube see press on 3mode ->physics properties
+
+->rigid body ->go on type saw a active to transform in passive
+
+->building tube with pass tool 
+
+union, intersection, difference (add modifier, boolean, and then select second object, then apply and remove second object)

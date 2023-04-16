@@ -275,6 +275,7 @@
 ;; ;; activate dumb-jump
 ;; ;; its shortcut is M-.
 ;; (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
+(
 ;; ;; insert closing brackets and double quotes
 ;; (require 'flex-autopair)
 ;; (flex-autopair-mode 1)

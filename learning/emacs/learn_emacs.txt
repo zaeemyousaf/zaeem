@@ -1,0 +1,89 @@
+;;arithmatic operators
+(+ 2 2); 2+2
+(- 7 2); 7-2
+(* 7 2); 7*2
+(/ 8 3); 8/3
+
+;; while loop
+(setq i 0); i=0
+(while (< i 10)
+  ;; while i < 10
+  (princ (format "the squre of %d is %d\n" i (* i i)))
+  (setq i (+ i 1)); i = i+1
+  )
+
+;; setting variable
+(setq x 10)
+;; define function
+(defun add(a b)
+  (+ a b))
+
+;; install emacs manual 
+sudo apt-get install emacs-common-non-dfsg
+;; lambda and add-hook
+(add-hook 'c-mode-common-hook
+  (lambda() 
+    (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
+C-x C-f /sudo::/path/to/file
+
+;; how to draw a border around the source block when exporting to pdf
+#+ATTR_LATEX: :options frame=single ;; place before scr block
+
+You can make words ‘*bold*’, ‘/italic/’, ‘_underlined_’, ‘=verbatim=’ and ‘~code~’, and, if you must, ‘+strike-through+’. Text in the code and verbatim string is not processed for Org specific syntax; it is exported verbatim.
+
+;; setting paragraph justified
+#+LATEX: \setlength{\parindent}{0pt} #add to org mode first line
+
+;; to insert horizontal rule in org mode to pdf etc
+;; use below two lines in paragraph
+#+ATTR_LATEX: :width .6\textwidth :thickness 5pt
+-----
+#+OPTIONS: toc:nil # to remove table of contents
+
+#+OPTIONS: toc:2          (only include two levels in TOC)
+#+OPTIONS: toc:nil        (no default TOC at all)
+;;----------------------- grouping table
+| N | N^2 | N^3 | N^4 | sqrt(n) | sqrt[4](N) |
+|---+-----+-----+-----+---------+------------|
+| / |  <  |     |  >  |       < |          > |
+| 1 |  1  |  1  |  1  |       1 |          1 |
+| 2 |  4  |  8  | 16  |  1.4142 |     1.1892 |
+| 3 |  9  | 27  | 81  |  1.7321 |     1.3161 |
+|---+-----+-----+-----+---------+------------|
+;; search options in File Links
+[[file:~/code/main.c::255]]
+[[file:~/xx.org::My Target]]
+[[file:~/xx.org::*My Target]]
+[[file:~/xx.org::#my-custom-id]]
+[[file:~/xx.org::/regexp/]]
+[[attachment:main.c::255]] 
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry} # left right margin
+;; image size
+#+ATTR_LATEX: :height 5cm :width 50%
+#+ATTR_LATEX: :float wrap :width 0.38\textwidth :placement {r}{0.4\textwidth}
+
+;;interactive
+(defun f()
+  (interactive)
+  (message "function f()"))
+now you can call this function by pressing M-x  interactively
+;; getting help for a function and its argument type
+C-h f and then type function name like 'interactive'
+enjoy reading the manual
+
+;; example of getting two number from mini-buffer and adding them via a function
+n: is used to get a number a input
+\n: is used to separate argument
+
+(defun f(x y)
+  (interactive "nfirst number \nnsecond number")
+  (message "sum of two numbers %d" (+ x y)))
+  
+C-x C-f /sudo::path/file.ext
+eval-buffer
+
+indent python code
+select region + C-x tab shift left right etc
+
+;; for emacs config for reactjs
+https://emacs-lsp.github.io/lsp-mode/tutorials/reactjs-tutorial/

@@ -1,0 +1,9 @@
+chorom
+----------------
+Ctrl + TAB = next tab
+Ctrl + Shift + TAB = previous tab
+Ctrl + T = new tab
+Ctrl + W = close tab
+Ctrl + Shift + T = reopen last closed tab
+ALT + NUMBER # to select specific tab from left side
+ctrl + w # to close tab

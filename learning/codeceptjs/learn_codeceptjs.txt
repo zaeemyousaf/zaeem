@@ -1,0 +1,8 @@
+install nodejs
+goto dir and type
+npm init -y
+npm install codeceptjs puppeteer --save-dev
+npx codeceptjs init
+change url of page to test in puppeteer configue codecept.conf...
+make changes in *_test 
+npx codeceptjs run

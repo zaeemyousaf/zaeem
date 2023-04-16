@@ -1,0 +1,16 @@
+# c & c++
+FILE *fp = open(filename, "r")
+char buffer[20];
+fgets(buffer,buffer_size,fp)
+sscanf(buffer,"%d%d%c"); # extract int,int,and char from "10 20 c"
+nm hello.o # list all symbols of object file
+strdup
+strtok
+dup2
+strcpy
+strncpy
+readelf for symbol table
+htonl # host to network long int
+SOCK_STREAM # for tcp/ip
+AF_INET # for ipv4 addressing
+

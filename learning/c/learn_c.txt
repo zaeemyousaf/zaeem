@@ -10,3 +10,26 @@ dup2
 strcpy
 strncpy
 readelf for symbol table
+htonl # host to network long int
+SOCK_STREAM # for tcp/ip
+AF_INET # for ipv4
+INADDR_ANY # This is an IP address that is used when we don't want to bind a socket to any specific IP
+
+#=============== check if bacground process done before parsing next command
+	pid=waitpid(-1, &status, WNOHANG);
+		while(pid>0){
+			//print the PID and exit value if the process ended normally
+		    	if (WIFEXITED(status)){
+				printf("background pid %d is done: exit value %d\n", pid,status);
+				fflush(stdout);
+			}
+			//print the PID and signal if the process was terminated
+			else{
+				printf("background pid %d is done: terminated by singal %d\n", pid, status);
+				fflush(stdout);
+			}
+			//continue checking
+			pid = waitpid(-1,&status, WNOHANG);
+#===============
+	//do not wait for the process to complete
+	waitpid(pid, &status, WNOHANG); 

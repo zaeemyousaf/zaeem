@@ -1,0 +1,3 @@
+nc: netcat is server client programming
+nc -l 1234 # will open a port for listening
+nc 127.0.0.1 1234 # type on another console and start chatting.

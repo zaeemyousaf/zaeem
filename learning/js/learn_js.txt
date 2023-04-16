@@ -1,0 +1,43 @@
+function name(optional){}
+var product = function(){}
+
+unnamed argument:
+arguments[index]
+
+object can be instantiated
+1: literals
+2: default object
+============= key value pairs
+var item = {
+    key value pair
+    key = function (){
+
+    }
+}
+
+to grow dynamically
+item.prototype.functionName = function(){
+
+}
+============= loops
+for(x in obj){
+
+}
+
+//============ classes
+clas item {
+
+}
+
+class Book extends item {
+    
+    super(t);
+}
+
+new_fun = (para1, para2) => {
+        this represents the owner
+}
+
+new_fun = (para1, para2) {
+        this represents the caller
+}

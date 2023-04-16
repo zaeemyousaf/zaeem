@@ -1,0 +1,48 @@
+mysql -u zaeem -p   # to login Zymysql(9)
+mysql -h localhost -u zaeem -p  # or this one to log in
+mysql -h host -u user -p database_name # to login and use database_name
+mysql -h host -u root -p # to create database with previledge
+SET GLOBAL local_infile=1; # to set the premission for loading local data
+mysql --local-infile=1 -u root -p1 # to use local data at start
+------------
+LOAD DATA INFILE '/home/export_file.csv'
+INTO TABLE table_name
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+--comment
+SET @var_name = value;
+SELECT @VAR_name
+SELECT @VAR_name:= value # setting and displaying value at a time
+
+DELIMITER //  
+Create Procedure Test()  
+    BEGIN  
+        DECLARE A INT DEFAULT 100;  
+        DECLARE B INT;  
+        DECLARE C INT;  
+        DECLARE D INT;  
+        SET B = 90;  
+        SET C = 45;  
+        SET D = A + B - C;  
+        SELECT A, B, C, D;  
+    END //  
+DELIMITER ;  
+
+CALL Test();
+
+SELECT * FROM pet WHERE name = 'Bowser'; # where clause
+SELECT name, birth FROM pet ORDER BY birth; # order by
+SELECT name, birth FROM pet ORDER BY birth DESC; # descending
+TIMESTAMPDIFF(YEAR,birth,CURDATE()) # date difference
+SELECT name, birth FROM pet WHERE MONTH(birth) = 5;
+SELECT '2018-10-31' + INTERVAL 1 DAY;
+SELECT * FROM pet WHERE name LIKE 'b%'; # where name starts with b
+SELECT * FROM pet WHERE name LIKE '%fy'; # where name ends with fy
+SELECT * FROM pet WHERE name LIKE '%w%'; # has w char
+mysql> SELECT * FROM pet WHERE name LIKE '_____'; # has 5 char excactly
+SELECT * FROM pet WHERE REGEXP_LIKE(name, '^.{5}$');
+SELECT COUNT(*) FROM pet;
+mysql -u root -p -e "SELECT VERSION();SELECT NOW()" # query as command line argument
+GRANT ALL PRIVILEGES ON books.authors  TO 'tolkien'@'localhost'; # to grant access to particular database

@@ -1,0 +1,13 @@
+# put in main where you want to break
+import pdb 
+pdb.set_trace()
+# then break
+# type help for help
+# break
+# run
+# next
+
+from pprint import pprint
+pprint(vars(your_object)) # for print all properties of an object
+# it is very useful for debugging
+

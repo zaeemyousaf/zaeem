@@ -1,0 +1,12 @@
+Anyconnect is a cisco program to create vpn and after that a user can be connected to server
+1. download tar file from cisco and extract then go to vpn and install by typing
+   sudo ./vpn_install.sh
+2. type vmn.gmu.edu
+3. select group e.g general or student
+4. type credentials
+5. ask for 2FA authentication
+6. wait for connection to be established
+
+config file
+/opt/cisco/anyconnect/profile
+delete to create a new server

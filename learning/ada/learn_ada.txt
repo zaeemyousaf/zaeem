@@ -1,0 +1,3 @@
+sudo apt-get install gnat # to install ada compiler in ubuntu
+gnatmake hello # to compile hello.adb
+-- comment starts with double minus

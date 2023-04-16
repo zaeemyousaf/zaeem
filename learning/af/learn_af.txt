@@ -1,0 +1,46 @@
+https://www.youtube.com/watch?v=4BhpDCAL62M
+accounting and finance
+asset = equity + liability
+----------
+asset = net worth
+equity = ownership
+equity comes from owner + investors
+------------
+assets {current asset, non-current assets}
+current assest {inventory, cash, accounts receiveable, prepaid expenses}
+non-current asset {capitals, intangible assets}
+
+------------
+liability {current, non-current}
+current liability { < 1 year }
+non-current liability { >= 1 year }
+
+-----------
+equity {common, preferred }
+common equity { those who are paid at last }
+preferred equity {those who are paid back with preference, at first }
+
+-----------
+common equity { equity share capital, reservers & surplus(retained earnings) }
+Equity share capital means the capital raised by a company by issuing the shares to the general public
+
+Retained earnings are the amount of profit a company has left over after paying all its direct costs, indirect costs, income taxes and its dividends to shareholders. This represents the portion of the company's equity that can be used, for instance, to invest in new equipment, R&D, and marketing.
+
+---------------
+https://www.youtube.com/watch?v=CMv1zlZhb4Q
+three statements
+balance statement
+cashflow statement
+income statement
+
+balance sheet {asset = equity + liability at a single point in a time  }
+----------------
+depreciation {how much a particular entity loses its value }
+salvage {the worth of entity at the end of useful life }
+book value {the networth at anytime}
+(depreciable base) = cost - salvage
+depreciation = (depreciable base) / (useful life in year) 
+book value = cost - (accumlated depreciation)
+-----------------
+PP&E {Property, plant, and equipment: company's physical or tangible long-term assets}
+

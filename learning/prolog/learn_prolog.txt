@@ -1,4 +1,40 @@
+source: https://www.youtube.com/watch?v=SykxWpFwMGs
 ?- [db].       # to load db file in interpreter
+
 ?- consult('filename.pl'). # to load filename in interpreter
+
 ?- halt.                   # to exit the program
 
+?- listing                 # to print whole stuff in namespace
+
+?- write('string')         # to print on screen
+
+?- nl                       # new line
+
+predicate(item1, item2).     # is a predicate syntax
+e.g
+loves(zaeem, askar).        # zaeem loves askar
+
+loves(zaeem,askar) :- loves(askar,zaeem). # zaeem loves askar if askar loves zaeem (rule)
+
+predicate(item, VARIABLE)                 # variable has uppercase
+
+?- listing(male)                          # will list all predicates of male
+
+?- ;                                      # upon execution, press semi-colon to loop through all
+
+is_zaeem_male :- male(zaeem).             # rule without argument
+format('~w ~s grandparent ~n', [X, "is the"]) # ~w: variable ~s string ~n new line
+
+arity: is the number of argument a predicate takes
+
+and operator: ,
+or: ;
+if: :-
+not: not
+
+swipl -s triples.pl -g "forall((Goal = adjacent(a,A), call(Goal)), (write(Goal), nl))." -t halt. # will print out on the screen in non interactive way
+
+sibling(X,Y):- father(Z,X),
+               father(Z,Y),
+               X \= Y.

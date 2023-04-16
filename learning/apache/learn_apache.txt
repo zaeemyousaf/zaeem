@@ -1,0 +1,12 @@
+systemctl status apache2 # to see the status of apache of version 2
+systemctl reload apache2 # to reload
+a2ensite, a2dissite - enable or disable an apache2 site / virtual host
+a2dissite 000-default # to disable the default site
+----------------- Deploy a new site on local host
+1: create web on local host
+2: create a conf file in etc/apache2/sites-available/name.conf
+3: enable that conf file by a2ensite command
+------------------
+tail -n 20 /var/log/apache2/error.log # to see the error log
+
+ctrl + shift + r # to force refreash

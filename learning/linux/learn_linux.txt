@@ -208,3 +208,9 @@ http://czegel.com/sheridan/syst13416/lectures/Lecture4.html useful link
 :~$ ls -t # list in sorted by date, latest to oldest
 :~$ gpg --output delivery.gpg --encrypt --recipient zaeem toEncrypt.zip 
 :~$ find Ecommerce-App/ -type f -exec sed -i 's/old/new/g' {} \; # is used to replace old with new
+# run the following 3 lines to enable the proxy
+:~$ gsettings set org.gnome.system.proxy.socks host '192.168.0.1'
+:~$ gsettings set org.gnome.system.proxy.socks port 8080
+:~$ gsettings set org.gnome.system.proxy mode  'manual'
+# run the following one line to disable the proxy
+:~$ gsettings set org.gnome.system.proxy mode  'none'

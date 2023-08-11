@@ -1,0 +1,9 @@
+https://lmsarchives.lums.edu.pk/portal/site/~23030021/page/44fa36b9-7837-4742-a598-26bc491ad1bc
+
+cadaver https://lmsarchives.lums.edu.pk/dav/%7E23030021
+Setting up WebDAV for Linux (console)
+Open a new terminal.
+Type in the command cadaver https://lmsarchives.lums.edu.pk/dav/%7E23030021
+You might be asked to accept a certificate
+Type in your Sakai username and password
+Now you can download and upload documents from the command line.

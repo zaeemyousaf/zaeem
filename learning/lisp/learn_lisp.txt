@@ -382,3 +382,6 @@ and similarly for the relationship between mapcan and mapcar. Conceptually, thes
 ;; it is only possible by macro which runs the code setq on our behalf
 ;; (macroexpand '(push 1 lst)) ;; does not evaluate rather shows the command which it runs underhood
 ;; (macroexpand (push 1 lst)) ;; evaluates
+
+(assoc item list) ;; finds the associated pair list
+

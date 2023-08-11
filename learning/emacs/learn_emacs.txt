@@ -87,3 +87,9 @@ select region + C-x tab shift left right etc
 
 ;; for emacs config for reactjs
 https://emacs-lsp.github.io/lsp-mode/tutorials/reactjs-tutorial/
+
+;; occur word is used to grep all occurances of of that word
+
+;; press '%' in dired mode followd by 'd' to select multiple files in dired mode
+
+flycheck-select-checker
